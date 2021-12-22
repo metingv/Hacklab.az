@@ -1,0 +1,24 @@
+@import "../formul";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.afterSearch{
+    @include displayflex($fd:column);
+    margin-top:50px;
+    margin-bottom:50px;
+    
+    a{
+    color:black;
+    }
+
+    .title{
+        @include font($fs: clamp(40px, 3.4722vw, 50px), $ta: center, $fw: 600, $c: black, $fm: 'Montserrat');
+        @include mp($m: 30px 20px 0 20px );
+    }
+    .item{
+    @include font($fs: clamp(20px, 2.0833vw, 30px), $ta: center, $fw: 400, $c: black, $fm: 'Montserrat');
+    width:100%;
+    padding:20px clamp(20px, 6.9444vw, 100px);
+    margin-top:50px;
+    border:1px solid black;
+    }
+}

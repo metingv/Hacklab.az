@@ -1,0 +1,66 @@
+@import "../formul";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.Section5{
+  z-index: 1000;
+   margin-top:100px;
+  h1{
+    @include font($fw:600,$fm:'Montserrat',$fs:clamp(40px, 3.4722vw, 50px),$c:'',$ta:center,$lh:3.2638vw,$ls:''); 
+    margin-bottom: 30px;
+  }
+  .blogcontent{
+    // @include border;
+    @include displayflex($fd:column,$ai:center,$jc:center);
+    @include size($w:100%,$h:'',$mw:'',$mh:'',$minh:'');
+    @include font($fw:400);
+    @include mp($m:clamp(0px, 2.9282vw , 40px)  0 0 0);
+    .blogtitle{
+     @include font($fw:400,$fm:'Montserrat',$fs:calc(32.68px + 2vw),$c:'',$ta:center);
+    }
+    .blogdivs{
+      @include displayflex;
+      flex-wrap: wrap;
+      // border:1px solid green;
+     
+      .blogdiv{    
+        @include mp($m:20px 1.4641vw 0px 0px); 
+        @include displayflex($fd:column);
+        @media screen and (max-width:810px) {      
+          //  &:nth-child(2), &:nth-child(4){
+          //   @include mp($m:20px 0px 0px 0px);
+          //  }
+          &:nth-child(even){
+            @include mp($m:20px 0px 0px 0px);
+           }
+          }
+          @media screen and (max-width:700px) {      
+            @include mp($m:20px 0px 0px 0px);
+           }
+          &:last-child{
+            @include mp($m:20px 0px 0px 0px);
+          }
+            &:hover{
+            img{
+              filter: grayscale(0%);
+            }
+          }   
+        img{
+          filter: grayscale(100%);
+          @include size($w:clamp(200px, 27.7777vw, 400px),$h:clamp(100px, 18.0555vw, 188px),$mw:'',$mh:'',$minh:'');
+          @include media ($d:810px,$w:calc(230px + 10.6412vw),$mw:'',$fs:'',$h:calc(130px + 10.6412vw));
+          object-fit: cover;
+          
+    
+        }
+        .btitle{  
+          background: #E3E3E3;
+          box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+          @include mp($m:0px 0 0 0, $p:15px 15px 30px 15px);
+          @include size($w:clamp(200px, 27.7777vw, 400px),$h:'',$mw:'',$mh:'',$minh:'');
+          @include media ($d:810px,$w:calc(230px + 10.6412vw));
+          @include font($fw:500,$fm:'Montserrat',$fs:clamp(14px, 1.5277vw ,22px),$c:'',$ta:left);
+        }
+      }
+    }
+  }
+} 

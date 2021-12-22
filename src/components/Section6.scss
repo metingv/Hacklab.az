@@ -1,0 +1,157 @@
+@import "../formul";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.Section6{
+   padding-top:clamp(20px,8.3333vw,120px);
+  .meetingcontent{
+    z-index:1000;
+    @include displayflex($fd:column,$ai:space-between,$jc:center);
+    @include size($w:100%,$h:'',$mw:'',$mh:'',$minh:'');
+    @include font($fw:400,$fm:'',$fs:'',$c:'',$ta:'',$lh:'',$ls:'');
+    @include mp($m:0px, $p:0px 7.3206vw);
+
+    .meetingtitle{
+      @include font($fw:600,$fm:'Montserrat',$fs:clamp(40px, 3.4722vw, 50px),$c:'',$ta:center,$lh:3.2638vw,$ls:''); 
+     @include mp($m:20px 0 30px 0)
+    }
+    .meeting-text{
+      @include font($fw:400,$fm:'Montserrat',$fs:clamp(20px, 1.5277vw, 22px),$c:'',$ta:center,$lh:1.73.61vw,$ls:'');
+      @include mp($m:0 0 40px 0);
+    }
+    .meetingdivs{
+      @include displayflex;
+      @include mp($m:0px 0px 0px 0px);
+      flex-wrap: wrap;
+      @media screen and (max-width:682px) {      
+        @include displayflex($fd:column)       
+      }
+      .meetingdiv{
+        @include displayflex($fd:column);
+        z-index:1000;
+        @include mp($m:20px 0px 0px 0px);
+        &:nth-child(1),&:nth-child(3),&:nth-child(5){
+         @include mp($m:20px 20px 0px 0px);
+        }
+        @media screen and (min-width:1453px) {      
+          &:nth-child(1){
+            @include mp($m:20px 20px 0px 0px);
+          } 
+          &:nth-child(3){
+            @include mp($m:20px 0px 0px 20px);
+          }   
+          &:nth-child(4){
+            @include mp($m:20px 20px 0px 0px);
+          } 
+          &:nth-child(5){
+            @include mp($m:20px 0px 0px 0px);
+          }
+          &:nth-child(6){
+            @include mp($m:20px 0px 0px 20px);
+          } 
+        }
+        @media screen and (max-width:726px) {      
+          &:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4),&:nth-child(5),&:nth-child(6){
+            @include mp($m:20px 10px 0px 10px);
+           }        
+        }
+        .alt{  
+          background: #E3E3E3;
+          box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+          @include mp($p:0px clamp(25px, 2.5vw, 36px) 0px clamp(25px, 2.9166vw, 42px));
+          @include size($w:clamp(300px,27.7777vw, 400px),$h:'',$mw:'',$mh:"",$minh:'');
+          // @include media ($d:682px,$w:calc(120px + 40.9238vw));
+          // @include font($fw:600,$fm:'Montserrat',$fs:calc(10px + 1.8301vw),$c:'',$ta:left,$lh:'',$ls:'');
+          .time{
+            @include mp($m: clamp(25px, 2.7777vw, 30px) 0 clamp(25px, 2.7777vw, 30px) 0);
+            -webkit-text-stroke: 2px #000000;
+            -webkit-text-fill-color: #E3E3E3;
+            -webkit-animation: fill 0.5s infinite alternate;
+            text-align: left;
+            @include font($fw:600,$fm:'Montserrat',$fs:clamp(45px, 4.8611vw, 70px),$c:'',$ta:left,$lh:clamp(50px, 5.9027vw, 85px),$ls:'');
+            @media screen and (max-width: 900px){
+              -webkit-text-stroke: 1px #000000;
+            }
+          }
+          .rootTitle{
+            @include font($fw:600,$fm:'Montserrat',$fs:clamp(20px, 2.2222vw, 32px),$c:'',$ta:left,$lh:clamp(23px, 2.7777vw, 40px),$ls:'');
+            margin-bottom: 13px;
+            @include size($h:clamp(60px, 8.3333vw, 120px), $mw:'',$mh:'',$minh:'');
+          }
+          .rootTitleMini{
+          @include font($fw:500,$fm:'Montserrat',$fs:clamp(18px, 1.7361vw, 25px),$c:'',$ta:left,$lh:2.0833vw,$ls:'');
+          }
+          .time-button{
+            @include mp($m: clamp(30px, 5.5555vw, 80px) 0 clamp(25px, 2.5694vw, 37px) 0);
+            @include displayflex($ai:center,$jc:center);      
+            @include font($fw:600,$fm:'Montserrat',$fs: clamp(14px,2.5622vw,35px),$c:'',$ta:left,$lh:'',$ls:'');
+            button{
+              @include size($w:calc(30px + 14.6412vw),$mw:250px,$h:calc(25px + 1.8301vw),$mh:50px,$minh:'');
+              @include font($fw:600,$fm:'Montserrat',$fs: clamp(14px,2.0497vw,22px),$c:#202020,$ta:center,$lh:'',$ls:'');
+              box-sizing: border-box;
+              outline:none;
+              border: none;
+              z-index:4;
+              background: transparent;
+              @include media($d:450px, $w:calc(50px + 14.6412vw), $h:calc(25px + 1.8301vw), $m: 10px 0 0 0);
+              // @media screen and (max-width: 500px){
+              //   margin-top:40px;
+              // }
+              &:hover{
+                background: transparent;
+                color:#202020;
+              }
+            }
+          .btn {
+            position: relative;
+              @include size($w:calc(30px + 14.6412vw),$mw:250px,$h:calc(25px + 1.8301vw),$mh:50px,$minh:'');
+              @include media($d:450px, $w:calc(50px + 14.6412vw), $h:calc(25px + 1.8301vw));
+            z-index: 6;
+            cursor: pointer;
+            font-weight: 400;
+            display: block;
+            position: relative;
+            padding: auto;
+          }
+          .btn-1 {
+            .span-text-abune{
+              @include font($fw:600,$fm:'Montserrat',$fs: clamp(14px,2.0497vw,22px),$c:#202020,$ta:center);
+            }
+            svg {
+              @include size($w:calc(30px + 14.6412vw),$mw:250px,$h:calc(25px + 1.8301vw),$mh:50px);
+              @include media($d:450px, $w:calc(50px + 14.6412vw), $h:calc(25px + 1.8301vw));
+              left: 0;
+              position: absolute;
+              top: 0; 
+            }
+            rect {
+              fill: none;
+              stroke:  rgba(0, 0, 0, 0.8);
+              stroke-width: 3;
+              stroke-dasharray: 622, 0;
+              transition: all 0.35s linear;
+            }
+          }
+          .btn-1:hover {
+            background: rgba(#fff, 0);
+            font-weight: 900;
+            letter-spacing: 1px;
+            rect {
+              stroke-width: 6;
+              stroke-dasharray: 15, 250%;
+              @media(max-width: 900px){
+                stroke-dasharray: 15, 265%;
+              }
+              @media(max-width: 500px){
+                stroke-dasharray: 15, 275%;
+              }
+              stroke-dashoffset: 48;
+              transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+            }
+          }
+        }
+      }
+    }
+   }
+  }
+}
+

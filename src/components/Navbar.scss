@@ -1,0 +1,408 @@
+@import "../formul";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+.navbar{
+width:100%;
+// border: 1px solid red;
+padding: 47px 50px 50px 50px;
+@include media ($d:500px,$p:30px);
+z-index:10000;
+@include displayflex($ai:center,$jc:space-between);
+
+//-------------------dropdown---- start
+#dropdownMenuButton{
+  border:1px solid black;
+  background:transparent;
+  padding:10px 8px;
+  @include font($fs: 20px, $ta: center, $fw: 600, $c: black, $fm: 'Montserrat');
+  text-transform:uppercase;
+
+    @media screen and (max-width: 1020px) {
+      border:1px solid #fff;
+      color: #fff;
+      
+    }
+}
+button:focus{
+  outline:none;
+}
+.dropdown-menu{
+  
+  border:1px solid black;
+  border-top:0px solid black;
+  border-radius:0px;
+  background:transparent; 
+  text-transform:uppercase;
+  margin:0px;
+  padding:10px 7px;
+  min-width:0px;
+   @media screen and (max-width: 1020px) {
+    border:1px solid #fff;
+    border-top:0px solid black;
+
+    }
+}
+.dropdown-item{
+  margin:0px;
+  padding:0px;
+  @include font($fs: 20px, $ta: center, $fw: 500, $c: black, $fm: 'Montserrat');
+   @media screen and (max-width: 1020px) {
+      color: #fff;
+      margin:0px auto!important;
+      justify-self: center;
+  }
+  &:hover{
+   background:transparent;
+  }
+}
+//-------------------dropdown---- finish
+
+
+img{
+  @include size($w:260px,$h:58px);
+  @include media ($d:500px,$w:170px,$h:38px);
+}
+.burger{
+  z-index:10;
+  display: none;
+  @include media ($d:1020px,$w:'',$mw:'',$fs:'',$h:'',$p:'',$m:0 0 0 40px,$fd:'',$c:'',$di:block);
+  i{
+    font-size:25px;
+  }
+}
+
+ul{
+  @include displayflex;
+  list-style-type: none;
+  z-index:1000000000000000;
+  color:#fff;
+  .btn1 {
+    color: black;
+    cursor: pointer;
+    font-size:22px;
+    font-weight: 500;
+    line-height: 26.82px;
+    font-family: "Montserrat";
+    width: 230px; 
+    height: 50px;
+    position: relative;
+    text-decoration: none;
+    &:hover { text-decoration: none; }
+  }
+  .fa-times{
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+    width:20px;
+    height: 20px;
+    display:none;
+    font-size:40px;
+    font-weight: 600;
+    color:#fff;
+    float:right;
+    margin-left:80%;
+    @media screen and (max-width: 1020px) {
+    display:block;
+    }
+  }
+  @media screen and (max-width: 1020px) {
+    border:none;
+    position: fixed;
+    right:-60%;   //other ideya right:0%; width:0% jquery => width:55%
+    top:0%;
+    // background: #423a3a;
+    background: #333333;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s ease-in-out;
+    visibility:hidden;
+    color:#fff; 
+    overflow-x: scroll;
+    padding-bottom: 70px;
+
+  }
+  li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0 0 5.625vw;
+    z-index:100;
+    padding:0px;
+    a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+   
+    @media screen and (max-width: 1020px) {
+      &:nth-child(1){
+        justify-self: flex-end;
+      }
+    }
+
+    @include media ($d:1240px, $m:0 0 0 40px);
+   
+    .tuc-hov{
+      width: 0%;
+      background-color: black;
+      height: 1px;  
+    }
+    .tuc{
+     width: 100%;  
+     @media screen and (max-width: 1020px) {
+      width: 100%;
+     }
+     border-bottom: 2px solid transparent;
+     @include font($fw:500,$fm:'Montserrat',$fs:20px, $ta:center);
+
+    
+     &:hover ~ .tuc-hov,  &:hover{
+      @include font($fw:600,$fm:'Montserrat',$fs:20px, $ta:center);
+        width: 100%!important; 
+        transition: width 0.5s ease;
+         @media screen and (max-width: 1020px) {
+         background: transparent;
+         }
+    }
+ 
+    }
+ 
+    @media screen and (max-width: 1020px) {
+      font-size:25px;
+      margin-top:50px;
+      margin-left:0px;
+      width: 100%;
+      text-align: center;
+      
+    }
+    @include font($fw:400,$fm:'Montserrat',$fs:24px,$c:#202020);
+    a{
+      @include font($fw:400,$fm:'Montserrat',$fs:24px,$c:#202020);
+      text-decoration:none;
+      z-index:100;
+      height: 50px;
+      @media screen and (max-width: 1020px){
+        font-size:30px;
+        color:#fff; 
+        text-align: center;
+      }
+    }
+    &:hover{
+       cursor:pointer;
+      }
+      
+  }
+ 
+.last-li-one{
+    z-index:10000000;
+    text-align:center;
+    width: 200px; 
+    height: 50px;
+    // margin: 28px 0px 0px 0px;
+    margin: 8px 0px 0px 90px;
+      @media screen and (max-width: 1250px) {
+        margin: 28px 0px 0px 60px;
+      }
+     @media screen and (max-width: 1090px) {
+        margin: 28px 0px 0px 40px;
+    }
+      @media screen and (max-width: 990px) {
+        margin: 28px 0px 0px 30px;
+      }
+      @media screen and (max-width: 950px) {
+        margin: 50px 12px 0px 0px;
+      }
+      @media screen and (max-width: 900px) {
+        width: 200px;
+      }
+      @media screen and (max-width: 400px) {
+        margin: 50px 14px 0px 0px;
+      }
+     
+
+    button{
+      width: 230px;
+      height: 50px;
+      box-sizing: border-box;
+      outline:none;
+      border: none;
+      z-index:4;
+      background: transparent;
+      @include size($w:230px, $h:50px);
+      @include font( $fm:'Montserrat', $fs:22px, $fw:500, $c:#fff);
+    }
+    
+    .btn {
+      position: relative;
+      width: 230px;
+      height: 50px;
+      z-index: 6;
+      cursor: pointer;
+      @include font( $fm:'Montserrat',$fw:500, $fs:22px, $c:#fff, $lh: 49px, $ta: center);
+      // font-weight: 400;
+      // line-height: 49px;
+      // text-align: center;
+      display: block;
+      position: relative;
+      text-decoration: none;
+      // margin-left: 200px;
+      // margin: 0px 0px 0px 0px;   
+      padding: auto;
+  
+      // @include media($d:500px, $w:170px, $h:35px, $m:30px auto, $fs: 14px, $p: auto, $lh:57px);
+      @media(min-width: 600px) {     
+        // margin: 0 1em 2em;
+      }  
+      &:hover { text-decoration: none; }
+    }
+    .btn-1 {
+      margin-top:5px;
+      align-items:center;
+      justify-content:center;
+      width: 130px; 
+      height: 50px;
+      padding: 0px 0px 0px 58px;
+      @media screen and (max-width: 950px) {
+        // margin: 0px;
+      }
+      @media screen and (max-width: 900px) {
+        width: 200px;
+        padding: 0px 0px 0px 30px;
+        // margin: 0 0 0 40px;
+      }
+      @media screen and (max-width: 500px) {
+        width: 300px; 
+        height: 50px;
+        padding: 0px 78px 0px 0px;
+      }
+      .span-text-abune{
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        // text-align: center;
+        // font-size: 22px;
+        // text-align: center;
+        //  color: black;
+        //  font-weight: 500;
+        display: block;
+        margin: 0px auto;
+        // @include media($d:500px, $fs: 18px);
+        @include font($fs: 22px, $ta: center, $fw: 500, $c: black, $fm: 'Montserrat');
+        
+        
+         @include media($d:950px, $c:#fff); 
+        //  @include media($d:500px, $m: 0px 0px 0px 0px);
+      }
+      svg {
+        width: 230px!important;
+        // height: 50px;
+        // @include media($d:500px, $w:170px, $h:35px, $m:10px auto);
+        // left: 0;
+        // position: absolute;
+        // top: 0; 
+       
+        height: 50px;
+        left: 0;
+        position: absolute;
+        top: 0; 
+        width: 100%; 
+        // margin: 0 30px 0 0;
+        mix-blend-mode:difference;
+        @media screen and (max-width: 500px) {
+          margin: 0 0 0 -5px;
+          width: 230px; 
+          height: 50px;
+        }
+
+      }
+      rect {
+        // fill: none;
+        // stroke: black;
+        // stroke-width: 3;
+        // stroke-dasharray: 622, 0;
+        transition: all 0.35s linear;
+        // @media(max-width: 950px) {     
+        //   stroke: #fff;
+        // } 
+
+        fill: none;
+        stroke: black;
+        @media screen and (max-width: 950px) {
+          stroke: #fff;
+        }
+        text-align: center;
+        width: 230px; 
+        height: 50px;
+        stroke-width: 3;
+        stroke-dasharray: 622, 0;
+        text-align: center;
+        margin-right: 50px;
+        // @media screen and (max-width: 900px) {
+        //    width: 200px;
+        // }
+        @media screen and (max-width: 500px) {
+          width: 230px;  
+        }
+
+      }
+    }
+    .btn-1:hover {
+      // background: rgba(#fff, 0);
+      // font-weight: 900;
+      // letter-spacing: 1px;   
+
+      span{
+        font-weight: 900;
+      }
+      rect {
+        stroke-width: 6;
+        stroke-dasharray: 15, 420;
+        stroke-dashoffset: 48;
+        transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+      }
+    }
+
+  }
+}
+}
+
+
+#walletinput {
+  width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  outline: none;
+  border: none;
+  font-size:22px;
+  cursor:context-menu!important;
+}
+
+
+.alert1 {
+  background-image: url("https://i.ibb.co/2dB4Rkj/bg1.gif");  
+  background-size: 95%;  // 5000px lik sekildi 95% le gorsensin
+  background-color: #E0E0E0;
+  background-blend-mode: multiply;
+  width: 500px;
+  display: flex;
+  font-size:19px;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  position: fixed;
+  padding: 20px 20px 40px 20px;
+  bottom: 20px;
+  left: 20px;
+  display: none;
+-webkit-box-shadow: -1px 2px 5px 9px rgba(0,0,0,0.23);
+-moz-box-shadow: -1px 2px 5px 9px rgba(0,0,0,0.23);
+box-shadow: -1px 2px 5px 9px rgba(0,0,0,0.23);
+}

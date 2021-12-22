@@ -1,0 +1,43 @@
+{
+  "name": "hacklab-mailch",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@solana/web3.js": "^1.31.0",
+    "gsap": "3.8.0",
+    "history": "5.0.1",
+    "i18next": "^21.5.4",
+    "i18next-browser-languagedetector": "^6.1.2",
+    "jquery": "3.6.0",
+    "node-sass": "^4.14.1",
+    "react": "17.0.2",
+    "react-ctrl-f": "^0.0.3",
+    "react-dom": "17.0.2",
+    "react-fast-marquee": "1.2.1",
+    "react-i18next": "^11.14.3",
+    "react-redux": "7.2.5",
+    "react-router": "5.2.1",
+    "react-router-dom": "5.3.0",
+    "react-router-hash-link": "^2.4.3",
+    "react-scripts": "4.0.0",
+    "redux": "4.1.1"
+  },
+  "devDependencies": {
+    "@babel/runtime": "7.13.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

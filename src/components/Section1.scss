@@ -1,0 +1,57 @@
+@import "../formul";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.Section1{ 
+  @include size;
+  height: calc(540.72px + 8vw);
+  
+  .gif{
+    background-color: transparent;
+     
+    img {
+      @include size;
+      height: calc(430.72px + 8vw);
+      mix-blend-mode: difference;
+      object-fit: cover;
+    } 
+  }
+  .write{
+    position:absolute;
+    margin-top:120px;
+    z-index:1;
+    @include  displayflex($fd:column,$ai:center,$jc:center);
+    @include size($w:100%);
+    span{
+      @include font($fw:600, $fm:'Montserrat', $fs:35px, $c:#0E0E0E, $ta:center);
+      @include size($w:90.77%,$mw:1056px); 
+      @include media($d:1200px, $fs:40px);
+      @include media($d:860px, $fs:25px);
+
+    }
+
+    .button1{
+      width: 230px;
+      height: 50px;
+      outline:none;
+      z-index:4;
+      background: #202020;
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      margin-top:70px;
+      @include  displayflex;
+      @include size($w:230px, $h:50px);
+      @include font($fw:500, $fm:'Montserrat', $fs:22px, $c:#fff);
+      @include media($d:910px, $fs:18px);
+      @include media($d:500px, $fs:14px, $h:40px, $w:180px, $m: 30px auto);
+      &:hover{
+        text-decoration:none;
+        color:#FFFFFF;
+      }
+    }
+    .alttext{
+      @include font($fw:300, $fm:'Montserrat', $fs:21px, $c:#000, $ta:center);
+      margin-top:20px;
+    }
+  } 
+}
+
+

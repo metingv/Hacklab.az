@@ -1,0 +1,71 @@
+$max: max-width;
+$min: min-width;
+$color1: pink;
+$maincolor: rgb(199, 175, 179);
+
+@mixin size($w:100%,$h:'',$mw:'',$mh:'',$minh:''){
+  width: $w;
+  height: $h;
+  max-width: $mw;
+  max-height:$mh;
+  min-height:$minh;
+ }
+
+
+ @mixin clamp($miv:'',$fv:'',$mv:''){
+  width: clamp($miv,$fv,$mv);
+  height: clamp($miv,$fv,$mv);
+  font-size: clamp($miv,$fv,$mv);
+ }
+
+ @mixin font($fw:400,$fm:'',$fs:'',$c:'',$ta:'',$lh:'',$ls:''){
+  font-weight: $fw;
+  font-family: $fm;
+  font-size: $fs;
+  color: $c;
+  text-align: $ta;
+  line-height: $lh;
+  letter-spacing: $ls;
+ }
+
+@mixin displayflex($fd:row,$ai:center,$jc:center){
+ display: flex;
+ flex-direction: $fd;
+ align-items: $ai;
+ justify-content: $jc;
+}
+
+@mixin mp($m:'', $p:''){
+  margin: $m;
+  padding: $p;
+}
+@mixin border(){
+  border: 2px solid red;
+ }
+@mixin border1(){
+  border: 2px solid green;
+ }
+@mixin border2(){
+  border: 2px solid blue;
+ }
+
+@mixin media ($d:'',$w:'',$mw:'',$fs:'',$h:'',$p:'',$m:'',$fd:'',$c:'',$di:'',$lh:'',$fw:'',$miw:'',$ta:'',$bb:'',$b:'') {
+  @media screen and (max-width: $d) {
+   display: $di;
+   width: $w;
+   max-width:$mw;
+   min-width: $miw;
+   height:$h;
+   padding: $p;
+   margin: $m;
+   flex-direction: $fd;
+   font-size: $fs;
+   color: $c;
+   line-height: $lh;
+   flex-wrap:$fw;
+   text-align: $ta;
+   border-bottom: $bb;
+   border: $b;
+  }
+}
+

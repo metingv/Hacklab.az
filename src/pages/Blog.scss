@@ -1,0 +1,99 @@
+@import "../formul";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.Blog{
+    position: relative;
+    margin:40px 0px clamp(20px,10.9809vw,150px) 0px;
+  a{
+  text-decoration: none!important;
+  color:black; 
+}
+  .gif{ 
+     position: absolute;
+     background-color: transparent; 
+     .img1 { 
+      @include size($h:100vh,$mh:668px,$minh:668px,$w:100vw);
+      mix-blend-mode: difference;  
+           object-fit: cover;
+     }
+    .img2 {
+      @include size($h:100%,$mh:668px,$minh:668px,$w:100vw);
+      mix-blend-mode: difference;
+      transform: rotate(180deg);
+           object-fit: cover;
+    }
+  }
+
+  .blogcontent{
+    @include displayflex($fd:column,$ai:space-between,$jc:center);
+    @include size($w:100%,$h:'',$mw:'',$mh:'',$minh:'');
+    @include font($fw:400,$fm:'',$fs:'',$c:'',$ta:'',$lh:'',$ls:'');
+    @include mp($m:0px, $p:0px 7.3206vw);
+      z-index:1000;
+    .blogtitle{
+    @include font($fw:600,$fm:'Montserrat',$fs:clamp(40px, 3.4722vw, 50px),$c:'',$ta:center,$lh:3.2638vw,$ls:''); 
+    @include mp($m:0 0 30px 0);
+    }
+    .blogdivs{
+      @include displayflex;   
+      @include mp($m:0px 0px 100px 0px);
+      flex-wrap: wrap;
+     
+      .blogdiv{     
+   
+         z-index:1000;
+          @include mp($m:20px 20px 0px 0px);
+           &:hover{
+        img{
+          filter: grayscale(0%);
+        }
+      }
+          @media screen and (max-width:788px) {      
+          @include mp($m:20px 0px 0px 0px);        
+          }   
+        img{
+          filter: grayscale(100%);
+          @include size($w:calc(200px + 14.6412vw),$h:calc(74px + 14.6412vw),$mw:'',$mh:'',$minh:'');
+          @include media ($d:788px,$w:calc(200px + 25.6412vw),$mw:'',$fs:'',$h:calc(74px + 25.6412vw),$p:'',$m:'',$fd:'',$c:'',$di:'',$lh:'',$fw:'',$miw:'',$ta:'',$b:'');
+          object-fit: cover;
+        }
+        .btitle{  
+          background: #E3E3E3;
+          box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+          @include mp($m:-4px 0 0 0, $p:15px 15px 50px 15px);
+          @include size($w:calc(200px + 14.6412vw),$h:'',$mw:'',$mh:'',$minh:'');
+          @include media ($d:788px,$w:calc(200px + 25.6412vw));
+          @include font($fw:500,$fm:'Montserrat',$fs:calc(16px + 0.4392vw),$c:'',$ta:left,$lh:'',$ls:'');
+        }
+      }
+    }
+  }
+
+      .button1{
+
+      width: 230px;
+      height: 50px;
+      outline:none;
+      z-index:4;
+      background: #202020;
+      border: 1px solid rgba(0, 0, 0, 0.8);
+    
+      margin: auto;
+      @include  displayflex;
+      @include size($w:230px, $h:50px);
+      @include font($fw:500, $fm:'Montserrat', $fs:25px, $c:#fff);
+      @include media($d:910px, $fs:18px);
+      @include media($d:500px, $fs:14px, $h:40px, $w:180px, $m: 0px auto);
+      &:hover{
+        text-decoration:none;
+        color:#FFFFFF;
+      }
+    }
+
+
+
+
+  
+}
+
+

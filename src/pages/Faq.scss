@@ -1,0 +1,103 @@
+@import "../formul";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+
+
+.navbar{
+  position: initial;
+}
+.Faq{
+  margin:60px 0px clamp(20px,10.9809vw,150px) 0px;
+  // margin:60px 0px 150px 0px;
+  // border:10px solid yellow;
+  //@include media($d: 500px, $m: 40px 0px 90px 0px);
+  position: relative;
+  .gif{
+    position: absolute;
+    background-color: transparent;
+    .img1 {
+      @include size($h:100vh,$mh:668px,$minh:668px,$w:100vw);
+      mix-blend-mode: difference;
+        object-fit: cover;
+    
+    }
+    .img2 {
+      @include size($h:100%,$mh:400px,$minh:400px,$w:100vw);
+      mix-blend-mode: difference;
+      transform: rotate(180deg);
+           object-fit: cover;
+    }
+   
+  }
+
+  .faqcontent{
+    @include displayflex($fd:column,$ai:center,$jc:center);
+    @include size($w:100%,$h:auto,$mw:'',$mh:'');
+    z-index:10;
+    .ta{
+      z-index:4;
+      @include font($fw:600,$fm:'Montserrat',$fs:clamp(40px, 3.4722vw, 50px),$c:'',$ta:center,$lh:3.2638vw,$ls:'');  
+      margin-bottom: 30px;
+    }
+    .faqdivs{
+       padding: 0px 0px 20px 0px;
+       z-index:2;
+       @include font($fw:400,$fm:'Montserrat',$fs:28px,$c:#000000,$lh:35px);
+       @include size($w:100%,$h:'',$mw:1030px,$mh:'');
+       @include  media ($d:1124px,$w:100%,$mw:700px,$fs:'',$h:'',$p:'',$m:'',$fd:'',$c:'');
+       @include  media ($d:775px,$w:100%,$mw:500px,$fs:20px,$h:'',$p:'',$m:'',$fd:'',$c:'');
+       @include  media ($d:530px,$w:100%,$mw:320px,$fs:18px,$h:'',$p:'',$m:'',$fd:'',$c:'');
+       background: rgba(227, 227, 227, 0.8);
+      //  @include mp($p:0px 24px 0px 24px);
+       .line{
+         border-top: 1px solid black;
+         margin-bottom: 10px;
+         margin-top: 20px;
+         display: none;     
+       }
+       .icerik{
+         background: #E3E3E3;
+         display: none;
+         @include mp($p:10px 24px 0px 24px);
+         @include size($w:100%,$h:'',$mw:1030px,$mh:'');
+         @include  media ($d:775px,$fs:18px);
+         @include  media ($d:530px,$fs:14px, $p:0px 24px 0px 24px);
+         @include font($fw:400,$fm:'Montserrat',$fs:18px,$c:#000000,$lh:25px);
+       }
+       .icerikl{
+         padding-right: 24px;
+         font-size: 45px;
+       }
+       .i13{
+        @include mp($p:10px 24px 20px 24px);
+       }
+ 
+       .faqdivsin{
+         
+          @include displayflex($fd:row,$ai:center,$jc:space-between);
+          @include size($w:100%);
+          @include mp($p:0px 0px 0px 0px);
+           border-bottom:1px solid black;
+           span{
+             z-index: 5;
+            cursor:pointer;
+           }
+           &:nth-child(25){
+             border-bottom:0px solid black;
+           }
+          .title{    
+           @include mp($p:15px 24px 15px 24px);  
+           @include media($d:500px, $lh: 26px)
+ }
+ }
+     
+    }
+    
+   
+  }
+
+  
+  
+}
+
+

@@ -1,0 +1,122 @@
+@import "../formul";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.Blog1{
+    position: relative;
+    margin:60px 0px clamp(20px,10.9809vw,150px) 0px;
+  // border:10px solid green;
+  .gif{ 
+     position: absolute;
+     background-color: transparent; 
+     @include size($w:100vw);
+     .img1 { 
+      @include size($h:100vh,$mh:668px,$minh:668px,$w:100vw);
+      mix-blend-mode: difference;  
+      object-fit: cover;
+     }
+    .img2 {
+      @include size($h:100%,$mh:668px,$minh:668px,$w:100vw);
+      mix-blend-mode: difference;
+      transform: rotate(180deg);
+      object-fit: cover;
+    }
+  }
+
+  .sectionone{
+    z-index: 1000;
+    position: inherit;
+    @include displayflex;
+    @include mp($p: 20px 0px 20px 20px, $m:0px 7.3206vw);
+    @include media($d:900px, $p: 20px);
+    background-color: rgba(227, 227, 227, 0.7); 
+    .text{
+
+      @include font($fw:400,$fm:Montserrat,$fs:clamp(14px, 1.4641vw, 20px),$c:'',$ta:'',$lh:24px);
+      @include media($d:900px, $ta: justify);
+      .main-title{
+        @include font($fw:600,$fm:Montserrat,$fs:clamp(20px, 3.2942vw, 45px),$c:'',$ta:'',$lh:54px);
+        @include mp($m: 0 0 clamp(20px, 4.3923vw, 60px) 0);
+        @include media($d:1100px, $lh:48px);
+        @include media($d:900px, $ta: center,$lh:42px);
+        @include media($d:500px, $lh:30px);
+        
+      }   
+      img{
+        float: right;
+         object-fit: cover;
+        // width: 715px;
+        // height: 490px;
+        @include mp($m: -20px 0px 20px 20px);
+        @include size($w:52.3426vw,$h:calc(10px + 32.9428vw),$mw:715px,$mh:490px,$minh:'');
+        @media screen and (max-width: 900px){
+         float: initial;
+         width: 100%;
+         @include mp($m: 0px);
+        }
+      }
+    }
+  }
+  .sectiontwo{
+    z-index: 1000;
+    position:inherit;
+    @include mp($m: clamp(50px, 13.9824vw, 191px) 7.3206vw  clamp(50px, 10.2489vw, 140px) 7.3206vw); 
+    // @include border;
+    h1{
+      @include font($fw:400,$fm:Montserrat,$fs:clamp(20px,2.1961vw, 50px),$c:'',$ta:center,$lh:47.45px,$ls:'');
+    }
+    .blogcontent{
+      // @include border;
+      @include displayflex($fd:column,$ai:center,$jc:center);
+      @include size($w:100%,$h:'',$mw:'',$mh:'',$minh:'');
+      @include font($fw:400);
+      @include mp($m:clamp(0px, 2.9282vw , 40px)  0 0 0);
+      .blogtitle{
+       @include font($fw:400,$fm:'Montserrat',$fs:calc(32.68px + 2vw),$c:'',$ta:center);
+      }
+      .blogdivs{
+        @include displayflex;
+        flex-wrap: wrap;
+        // border:1px solid green;
+       
+        .blogdiv{    
+          @include mp($m:20px 1.4641vw 0px 0px); 
+          @include displayflex($fd:column);
+          @media screen and (max-width:810px) {      
+            //  &:nth-child(2), &:nth-child(4){
+            //   @include mp($m:20px 0px 0px 0px);
+            //  }
+            &:nth-child(even){
+              @include mp($m:20px 0px 0px 0px);
+             }
+            }
+            @media screen and (max-width:700px) {      
+              @include mp($m:20px 0px 0px 0px);
+             }
+            &:last-child{
+              @include mp($m:20px 0px 0px 0px);
+            }
+              &:hover{
+              img{
+                filter: grayscale(0%);
+              }
+            }   
+          img{
+            filter: grayscale(100%);
+            @include size($w:calc(100px + 14.2752vw),$h:calc(7px + 14.2752vw),$mw:295px,$mh:202px,$minh:'');
+            @include media ($d:810px,$w:calc(230px + 10.6412vw),$mw:'',$fs:'',$h:calc(130px + 10.6412vw));
+            object-fit: cover;
+      
+          }
+          .btitle{  
+            background: #E3E3E3;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+            @include mp($m:0px 0 0 0, $p:15px 15px 50px 15px);
+            @include size($w:calc(100px + 14.2752vw),$h:'',$mw:295px,$mh:202px,$minh:'');
+            @include media ($d:810px,$w:calc(230px + 10.6412vw));
+            @include font($fw:500,$fm:'Montserrat',$fs:clamp(14px, 1.4641vw ,20px),$c:'',$ta:left);
+          }
+        }
+      }
+    }
+  } 
+}
