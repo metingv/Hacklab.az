@@ -15,11 +15,12 @@ z-index:10000;
 #dropdownMenuButton{
   border:1px solid black;
   background:transparent;
-  padding:10px 8px;
+   padding: 10px 8px;
+  width: 58px;
   @include font($fs: 20px, $ta: center, $fw: 600, $c: black, $fm: 'Montserrat');
   text-transform:uppercase;
 
-    @media screen and (max-width: 1020px) {
+    @media screen and (max-width: 1027px) {
       border:1px solid #fff;
       color: #fff;
       
@@ -29,26 +30,25 @@ button:focus{
   outline:none;
 }
 .dropdown-menu{
-  
   border:1px solid black;
   border-top:0px solid black;
   border-radius:0px;
   background:transparent; 
   text-transform:uppercase;
   margin:0px;
-  padding:10px 7px;
   min-width:0px;
-   @media screen and (max-width: 1020px) {
+   width: 58px;
+   @media screen and (max-width: 1027px) {
     border:1px solid #fff;
     border-top:0px solid black;
-
     }
 }
 .dropdown-item{
   margin:0px;
-  padding:0px;
+  padding: 10px 8px;
+  width: 58px;
   @include font($fs: 20px, $ta: center, $fw: 500, $c: black, $fm: 'Montserrat');
-   @media screen and (max-width: 1020px) {
+   @media screen and (max-width: 1027px) {
       color: #fff;
       margin:0px auto!important;
       justify-self: center;
@@ -67,7 +67,7 @@ img{
 .burger{
   z-index:10;
   display: none;
-  @include media ($d:1020px,$w:'',$mw:'',$fs:'',$h:'',$p:'',$m:0 0 0 40px,$fd:'',$c:'',$di:block);
+  @include media ($d:1027px,$w:'',$mw:'',$fs:'',$h:'',$p:'',$m:0 0 0 40px,$fd:'',$c:'',$di:block);
   i{
     font-size:25px;
   }
@@ -102,11 +102,11 @@ ul{
     color:#fff;
     float:right;
     margin-left:80%;
-    @media screen and (max-width: 1020px) {
+    @media screen and (max-width: 1027px) {
     display:block;
     }
   }
-  @media screen and (max-width: 1020px) {
+  @media screen and (max-width: 1027px) {
     border:none;
     position: fixed;
     right:-60%;   //other ideya right:0%; width:0% jquery => width:55%
@@ -134,14 +134,23 @@ ul{
     margin: 0px 0 0 5.625vw;
     z-index:100;
     padding:0px;
+    height: 20px;
     a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+      &.active{
+      border-bottom:3px solid black;
+      @media screen and (max-width: 1027px) {
+        border-bottom:3px solid #fff;
+      }
+
+    }
+    
     }
    
-    @media screen and (max-width: 1020px) {
+    @media screen and (max-width: 1027px) {
       &:nth-child(1){
         justify-self: flex-end;
       }
@@ -152,11 +161,12 @@ ul{
     .tuc-hov{
       width: 0%;
       background-color: black;
-      height: 1px;  
+      height: 2px;  
+      margin-top: -2px;
     }
     .tuc{
      width: 100%;  
-     @media screen and (max-width: 1020px) {
+     @media screen and (max-width: 1027px) {
       width: 100%;
      }
      border-bottom: 2px solid transparent;
@@ -166,15 +176,15 @@ ul{
      &:hover ~ .tuc-hov,  &:hover{
       @include font($fw:600,$fm:'Montserrat',$fs:20px, $ta:center);
         width: 100%!important; 
-        transition: width 0.5s ease;
-         @media screen and (max-width: 1020px) {
+        transition: width 1s ease;
+         @media screen and (max-width: 1027px) {
          background: transparent;
          }
     }
  
     }
  
-    @media screen and (max-width: 1020px) {
+    @media screen and (max-width: 1027px) {
       font-size:25px;
       margin-top:50px;
       margin-left:0px;
@@ -188,7 +198,7 @@ ul{
       text-decoration:none;
       z-index:100;
       height: 50px;
-      @media screen and (max-width: 1020px){
+      @media screen and (max-width: 1027px){
         font-size:30px;
         color:#fff; 
         text-align: center;
@@ -361,6 +371,7 @@ ul{
       span{
         font-weight: 900;
       }
+      
       rect {
         stroke-width: 6;
         stroke-dasharray: 15, 420;
@@ -373,6 +384,7 @@ ul{
 }
 }
 
+//--------------------------- Solana Wallet --------------------------------------------
 
 #walletinput {
   width: 120px;

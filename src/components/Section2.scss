@@ -4,9 +4,13 @@
 
 .Section2{ 
  @include size($h:auto,$w:100vw);
- @include mp($m:100px 0px 0px 0);
+
+ @include mp($m: clamp(20px,6.9444vw,100px) 0px 0px 0);
  @include displayflex;
  overflow: hidden;
+ @media screen and (max-width:500px) {      
+      @include mp($m: 0px 0px 0px 0);      
+   } 
 
  
 .divs1{

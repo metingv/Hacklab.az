@@ -7,6 +7,9 @@
   cursor:none;
 }
  
+ input{
+  border-radius: 0px;
+ }
 
 
 body{
@@ -15,6 +18,18 @@ body{
   background-color: #E0E0E0;
   background-blend-mode: multiply;
   cursor: context-menu;
+   @media screen and (max-width:1024px) {      
+     background-size: 150%;        
+   } 
+   @media screen and (max-width:800px) {      
+     background-size: 200%;        
+   } 
+    @media screen and (max-width:600px) {      
+     background-size: 250%;        
+   } 
+    @media screen and (max-width:500px) {      
+     background-size: 300%;        
+   } 
 }
 
 select {

@@ -38,6 +38,7 @@ const Footer = ({deletecard}) => {
               Ünvan: Bakı şəhəri, Atatürk pr. 30A<br/>Bakı, Azərbaycan
             </p>
             <span className="right">2021. Bütün hüquqlar qorunur.</span>
+            <div className="end11">site by: ZOOM Agency</div>
           </div>
           <div className="child-two">
             <p className="facebook">
@@ -78,7 +79,7 @@ const Footer = ({deletecard}) => {
                 <img src="https://i.ibb.co/Yjc7Q3K/Whats-App-Image-2021-10-29-at-14-25-33-removebg-preview.png" />
               </div>
             </div>
-            <div className="end">site by: ZOOM Agency</div>
+            <div className="end1">site by: ZOOM Agency</div>
           </div>
         </div>
       </div>

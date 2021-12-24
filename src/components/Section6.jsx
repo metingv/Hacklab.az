@@ -10,7 +10,7 @@ function Section6({ text4 = [], displaymode1 }) {
   useEffect(() => {
     $(".navbar").css("position", displaymode1);
   });
-  return (
+  return ( 
     <>
       <div id="up" className="Section6">
         <div className="meetingcontent">

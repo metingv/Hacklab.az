@@ -36,12 +36,9 @@ export default function Section4() {
               type="submit"
               name="subscribe"
               value="Subscribe"
-              class="btnn btn-1"
+              class="buttonfx curtainup"
             >
-              <svg>
-                <rect x="0" y="0" fill="" width="100%" height="100%" />
-              </svg>
-              <span className="span-text-abune">ABUNƏ OLMAQ</span>
+              ABUNƏ OLMAQ
             </button>
           </div>
         </form>

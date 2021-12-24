@@ -2,25 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 .Section6{
-   padding-top:clamp(20px,8.3333vw,120px);
+   padding-top:clamp(70px,8.3333vw,120px);
   .meetingcontent{
     z-index:1000;
     @include displayflex($fd:column,$ai:space-between,$jc:center);
     @include size($w:100%,$h:'',$mw:'',$mh:'',$minh:'');
     @include font($fw:400,$fm:'',$fs:'',$c:'',$ta:'',$lh:'',$ls:'');
-    @include mp($m:0px, $p:0px 7.3206vw);
+
 
     .meetingtitle{
-      @include font($fw:600,$fm:'Montserrat',$fs:clamp(40px, 3.4722vw, 50px),$c:'',$ta:center,$lh:3.2638vw,$ls:''); 
+      @include font($fw:600,$fm:'Montserrat',$fs:clamp(30px, 3.4722vw, 50px),$c:'',$ta:center,$lh:3.2638vw,$ls:''); 
      @include mp($m:20px 0 30px 0)
     }
     .meeting-text{
       @include font($fw:400,$fm:'Montserrat',$fs:clamp(20px, 1.5277vw, 22px),$c:'',$ta:center,$lh:1.73.61vw,$ls:'');
-      @include mp($m:0 0 40px 0);
+      @include mp($m: 0 0 40px 0);
     }
     .meetingdivs{
       @include displayflex;
-      @include mp($m:0px 0px 0px 0px);
+      @include mp($m: 0px 0px 0px 0px,$p:0px 20px);
       flex-wrap: wrap;
       @media screen and (max-width:682px) {      
         @include displayflex($fd:column)       
@@ -28,32 +28,8 @@
       .meetingdiv{
         @include displayflex($fd:column);
         z-index:1000;
-        @include mp($m:20px 0px 0px 0px);
-        &:nth-child(1),&:nth-child(3),&:nth-child(5){
-         @include mp($m:20px 20px 0px 0px);
-        }
-        @media screen and (min-width:1453px) {      
-          &:nth-child(1){
-            @include mp($m:20px 20px 0px 0px);
-          } 
-          &:nth-child(3){
-            @include mp($m:20px 0px 0px 20px);
-          }   
-          &:nth-child(4){
-            @include mp($m:20px 20px 0px 0px);
-          } 
-          &:nth-child(5){
-            @include mp($m:20px 0px 0px 0px);
-          }
-          &:nth-child(6){
-            @include mp($m:20px 0px 0px 20px);
-          } 
-        }
-        @media screen and (max-width:726px) {      
-          &:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4),&:nth-child(5),&:nth-child(6){
-            @include mp($m:20px 10px 0px 10px);
-           }        
-        }
+        @include mp($m:20px 10px 0px 10px);
+       
         .alt{  
           background: #E3E3E3;
           box-shadow: 0px 4px 8px rgba(0,0,0,0.15);

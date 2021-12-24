@@ -86,7 +86,7 @@ export const Wallet = () => {
         </>
       )}
 
-      <div ref={ref2} className="alert1">
+       <div ref={ref2} className="alert1">
         Zəhmət olmasa, əvvəlcə Phantom pul kisəsi uzantısını quraşdırın və işə
         salın, rəsmi vebsayta daxil olmaq üçün 
         <a href="https://phantom.app/" target="_blank" style={{fontSize:"19px"}}>

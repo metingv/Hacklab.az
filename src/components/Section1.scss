@@ -7,50 +7,162 @@
   
   .gif{
     background-color: transparent;
+
      
-    img {
+    .image1 {
+      position: relative;
       @include size;
       height: calc(430.72px + 8vw);
       mix-blend-mode: difference;
-      object-fit: cover;
+      // background-image: url("https://i.ibb.co/fFGNc2b/dalga.gif"); 
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover; 
+  
     } 
   }
   .write{
     position:absolute;
     margin-top:120px;
     z-index:1;
+
     @include  displayflex($fd:column,$ai:center,$jc:center);
     @include size($w:100%);
     span{
-      @include font($fw:600, $fm:'Montserrat', $fs:35px, $c:#0E0E0E, $ta:center);
+      z-index: 2;
+      background: transparent;
+      -webkit-text-stroke: 1.8px #000;
+      // -webkit-text-fill-color: transparent;
+      -webkit-background-clip:text;
+      backdrop-filter: blur(1.1px);
+      -webkit-backdrop-filter: blur(1.5px);
+      @include font($fw:600, $fm:'Montserrat', $fs:clamp(20px,2.4305vw,35px), $c:transparent, $ta:center);
       @include size($w:90.77%,$mw:1056px); 
-      @include media($d:1200px, $fs:40px);
-      @include media($d:860px, $fs:25px);
-
-    }
-
-    .button1{
-      width: 230px;
-      height: 50px;
-      outline:none;
-      z-index:4;
-      background: #202020;
-      border: 1px solid rgba(0, 0, 0, 0.8);
-      margin-top:70px;
-      @include  displayflex;
-      @include size($w:230px, $h:50px);
-      @include font($fw:500, $fm:'Montserrat', $fs:22px, $c:#fff);
-      @include media($d:910px, $fs:18px);
-      @include media($d:500px, $fs:14px, $h:40px, $w:180px, $m: 30px auto);
-      &:hover{
-        text-decoration:none;
-        color:#FFFFFF;
+      @media screen and (max-width:1100px) { 
+          -webkit-text-stroke: 1px #000;
       }
+
     }
-    .alttext{
-      @include font($fw:300, $fm:'Montserrat', $fs:21px, $c:#000, $ta:center);
-      margin-top:20px;
-    }
+
+
+
+
+/* -----------2.qaynaq fill----------- */
+ 
+.buttonfx {
+  -moz-border-radius: 0px!important;
+  -webkit-border-radius: 0px!important;
+  -ms-border-radius: 0px!important;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  z-index:10;
+  width: 230px!important;
+  height: 50px;
+  padding: auto 0px;
+  color: #fff; /* button text color */
+  outline: none;
+  background: transparent;
+  border: 0;
+  margin-top: clamp(15px, 2.08333vw, 30px);
+  @include font($fw:500,$fm:'Montserrat',$fs:clamp(20px,1.5277vw,22px),$c:#333,$ta:center);
+  @include displayflex;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+  text-decoration: none;
+  @media screen and (max-width:700px) { 
+    width: 150px!important;
+    height: 40px;
+    padding: 0px 17px;
+    font-size: 16px;
+
+  }
+  
+}
+
+/* //// Default effect: Slide from Top  //// */
+
+.buttonfx:before,
+.buttonfx:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: #333; /* onhover background color */
+  z-index: -1;
+  transform: translate3D(
+    0,
+    -100%,
+    0
+  ); /* move elements above button so they don't appear initially */
+  transition: all 0.5s;
+}
+
+.buttonfx:before {
+  background: #fafcd6; /* button default background color */
+  z-index: -2;
+  transform: translate3D(0, 0, 0);
+}
+
+.buttonfx:hover {
+  color: white;
+}
+
+.buttonfx:hover:after {
+  transform: translate3D(0, 0, 0);
+  transition: all 0.5s;
+}
+
+/* //// Curtain Up  //// */
+
+.curtainup {
+  border: 1px solid #333;
+  transform-style: preserve-3d;
+  width: auto;
+}
+
+.curtainup:before,
+.curtainup:after {
+  transform-origin: center center;
+  transform: scale(1, 0);
+  width: 101%;
+}
+
+.curtainup:hover:before,
+.curtainup:hover:after {
+  transform: scale(1);
+  border-radius: 0;
+}
+
+
+
+    // .button112{
+    //   width: 230px;
+    //   height: 50px;
+    //   outline:none;
+    //   border-radius: 0px!important; 
+    //   -moz-border-radius: 0px!important;
+    //   -webkit-border-radius: 0px!important;
+    //   -ms-border-radius: 0px!important;
+    //   z-index:4;
+    //   background: #202020;
+    //   border: 0px solid rgba(0, 0, 0, 0.8);
+    //   margin-top:70px;
+    //   @include  displayflex;
+    //   @include size($w:230px, $h:50px);
+    //   @include font($fw:500, $fm:'Montserrat', $fs:22px, $c:#fff);
+    //   @include media($d:910px, $fs:18px);
+    //   @include media($d:500px, $fs:14px, $h:40px, $w:180px, $m: 30px auto);
+    //   &:hover{
+    //     text-decoration:none;
+    //     color:#FFFFFF;
+    //   }
+    // }
   } 
 }
 

@@ -35,6 +35,7 @@ const { pathname } = useLocation();
   return (
     <>
       <Navbar />
+      <div className="Ablog">
       <div id="up" className="Blog">
         <div className="gif">
           <img
@@ -60,23 +61,18 @@ const { pathname } = useLocation();
             })}
           </div>
         </div>
-          <a
-            href="https://f8twv0pnpma.typeform.com/hacklabuzvluk"
+      </div>
+         <a
+            href="#"
             target="_blank"
             type="submit"
             name="subscribe"
             value="Subscribe"
-            class="button1"
+            class="button1" 
           >
-            Növbəti
+          <button class="buttonfx curtainup">NÖVBƏTİ</button>      
           </a>
-      </div>
-
-
-
-
-
-
+     </div>
      <Section4 />
       <Footer />
     </>

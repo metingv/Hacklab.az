@@ -21,7 +21,13 @@ function Navbar({ displaymode }) {
     $(".fa-times").click(function () {
       $(".navmenu").css({ visibility: "hidden", right: "-60%" });
     });
-
+     $(".tuc").on("mouseenter", function (e) {
+      $("li a.active").css("border-bottom", "0px");
+    }); 
+       $(".tuc").on("mouseleave", function (e) {
+      $("li a.active").css("border-bottom", "3px solid black");
+    }); 
+     
 
   });
  
@@ -90,7 +96,7 @@ function Navbar({ displaymode }) {
         </li>
          <li>
           <NavLink to="/fond">
-            <div className="tuc">Fond</div>
+            <div className="tuc" >Fond</div>
             <div className="tuc-hov"></div>
           </NavLink>
         </li>

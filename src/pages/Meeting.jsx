@@ -7,7 +7,7 @@ import { NavLink, withRouter,useLocation } from "react-router-dom";
 import { connect } from "react-redux";
 import React, { useState, useEffect } from "react"; 
 import $ from "jquery";
-
+ 
 function Meeting({ text4 = [], displaymode1 }) {
 const { pathname } = useLocation();
   
@@ -71,18 +71,9 @@ const { pathname } = useLocation();
                           type="submit"
                           name="subscribe"
                           value="Subscribe"
-                          class="btn btn-1"
+                          class="buttonfx curtainup"
                         >
-                          <svg>
-                            <rect
-                              x="0"
-                              y="0"
-                              fill=""
-                              width="100%"
-                              height="100%"
-                            />
-                          </svg>
-                          <span className="span-text-abune">BOOK NOW</span>
+                          BOOK NOW
                         </button>
                       </div>
                     </div>

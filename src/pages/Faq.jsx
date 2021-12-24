@@ -34,7 +34,6 @@ function Faq({ text2 = [],displaymode1 }) {
     });
  
     $(".footer").bind("mouseleave", function (e) {
-
         $(".cursor").css("border", "1px solid black");
         });
      
@@ -50,12 +49,12 @@ function Faq({ text2 = [],displaymode1 }) {
           $(`.span${[i]}`).html("+");
           $(`.l${[i]}`).css("display", "none");
           $(`.t${[i]}`).css("border-bottom", "1px solid black");
-          $(`.t13`).css("border-bottom", "0px solid black");
+          $(`.t13`).css("border-bottom", "1px solid black");
         } else {
           $(".icerik").slideUp(500, "linear");
           $(".faqdivsin ").removeClass("activespan");
           $(".faqdivsin").css("border-bottom", "1px solid black");
-          $(`.t${[i]}`).css("border-bottom", "0px solid black");
+          $(`.t${[i]}`).css("border-bottom", "1px solid black");
           $(`.i${[i]}`).slideDown(500, "linear");
           $(`.t${[i]}`).addClass("activespan");
           $(".icerikl").html("+");

@@ -330,7 +330,7 @@ Cəmiyyətimiz yeni fikirləri sərbəst öyrənmək və araşdırmaq üçün bi
       image: image5,
       title: (
         
-         "Google Prime Video app introduces a new clip-sharing feature 3"
+         "Google Prime Video app introduces a new clip-sharing"
         
       )
     },
@@ -339,7 +339,7 @@ Cəmiyyətimiz yeni fikirləri sərbəst öyrənmək və araşdırmaq üçün bi
       image: image5,
       title: (
       
-          "Yandex Prime Video app introduces a new clip-sharing feature 4"
+          "Yandex Prime Video app introduces a new clip-sharing"
       
       )
     },
