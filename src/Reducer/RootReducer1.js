@@ -21,8 +21,6 @@ const RootReducer1 = (state = data, action) => {
       return {
         ...state,
         s: alls
-
-
       };
     default:
       return state;

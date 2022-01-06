@@ -31,7 +31,7 @@
         @include mp($m:20px 10px 0px 10px);
        
         .alt{  
-          background: #E3E3E3;
+          background: rgba(247, 245, 245, 0.6);
           box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
           @include mp($p:0px clamp(25px, 2.5vw, 36px) 0px clamp(25px, 2.9166vw, 42px));
           @include size($w:clamp(300px,27.7777vw, 400px),$h:'',$mw:'',$mh:"",$minh:'');
@@ -40,7 +40,7 @@
           .time{
             @include mp($m: clamp(25px, 2.7777vw, 30px) 0 clamp(25px, 2.7777vw, 30px) 0);
             -webkit-text-stroke: 2px #000000;
-            -webkit-text-fill-color: #E3E3E3;
+            -webkit-text-fill-color: rgba(247, 245, 245, 0.6);
             -webkit-animation: fill 0.5s infinite alternate;
             text-align: left;
             @include font($fw:600,$fm:'Montserrat',$fs:clamp(45px, 4.8611vw, 70px),$c:'',$ta:left,$lh:clamp(50px, 5.9027vw, 85px),$ls:'');
@@ -77,53 +77,99 @@
                 color:#202020;
               }
             }
-          .btn {
-            position: relative;
-              @include size($w:calc(30px + 14.6412vw),$mw:250px,$h:calc(25px + 1.8301vw),$mh:50px,$minh:'');
-              @include media($d:450px, $w:calc(50px + 14.6412vw), $h:calc(25px + 1.8301vw));
-            z-index: 6;
-            cursor: pointer;
-            font-weight: 400;
-            display: block;
-            position: relative;
-            padding: auto;
-          }
-          .btn-1 {
-            .span-text-abune{
-              @include font($fw:600,$fm:'Montserrat',$fs: clamp(14px,2.0497vw,22px),$c:#202020,$ta:center);
-            }
-            svg {
-              @include size($w:calc(30px + 14.6412vw),$mw:250px,$h:calc(25px + 1.8301vw),$mh:50px);
-              @include media($d:450px, $w:calc(50px + 14.6412vw), $h:calc(25px + 1.8301vw));
-              left: 0;
-              position: absolute;
-              top: 0; 
-            }
-            rect {
-              fill: none;
-              stroke:  rgba(0, 0, 0, 0.8);
-              stroke-width: 3;
-              stroke-dasharray: 622, 0;
-              transition: all 0.35s linear;
-            }
-          }
-          .btn-1:hover {
-            background: rgba(#fff, 0);
-            font-weight: 900;
-            letter-spacing: 1px;
-            rect {
-              stroke-width: 6;
-              stroke-dasharray: 15, 250%;
-              @media(max-width: 900px){
-                stroke-dasharray: 15, 265%;
-              }
-              @media(max-width: 500px){
-                stroke-dasharray: 15, 275%;
-              }
-              stroke-dashoffset: 48;
-              transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-            }
-          }
+
+
+
+            
+
+/* -----------2.qaynaq fill----------- */
+ 
+.buttonfx {
+  width: 230px!important;
+  height: 50px;
+  // padding: 0px 48px;
+  color: #fff; /* button text color */
+  outline: none;
+  background: transparent;
+  border: none;
+  float:right;
+  margin-top: clamp(15px, 2.08333vw, 30px);
+   @include font($fw:600,$fm:'Montserrat',$fs:clamp(14px,1.5277vw,20px),$c:#000,$ta:center);
+  line-height: 2;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none; /* remove underline if using A instead of BUTTON tag */
+  overflow: hidden;
+  transition: all 0.5s;
+  @media screen and (max-width:700px) { 
+    width: 160px!important;
+    height: 40px;
+    padding: 0px 17px;
+
+  }
+  
+}
+
+/* //// Default effect: Slide from Top  //// */
+
+.buttonfx:before,
+.buttonfx:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: #333; /* onhover background color */
+  z-index: -1;
+  transform: translate3D(
+    0,
+    -100%,
+    0
+  ); /* move elements above button so they don't appear initially */
+  transition: all 0.5s;
+}
+
+.buttonfx:before {
+  background: #fafcd6; /* button default background color */
+  z-index: -2;
+  transform: translate3D(0, 0, 0);
+}
+
+.buttonfx:hover {
+  color: white;
+}
+
+.buttonfx:hover:after {
+  transform: translate3D(0, 0, 0);
+  transition: all 0.5s;
+}
+
+/* //// Curtain Up  //// */
+
+.curtainup {
+  border: 1px solid #333;
+  transform-style: preserve-3d;
+  width: auto;
+}
+
+.curtainup:before,
+.curtainup:after {
+  transform-origin: center center;
+  transform: scale(1, 0);
+  width: 101%;
+}
+
+.curtainup:hover:before,
+.curtainup:hover:after {
+  transform: scale(1);
+  border-radius: 0;
+}
+          
+          
+          
         }
       }
     }

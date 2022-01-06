@@ -328,7 +328,7 @@ Cəmiyyətimiz yeni fikirləri sərbəst öyrənmək və araşdırmaq üçün bi
       link: "/blog",
       image: image5,
       title: (
-          "Edge Prime Video app introduces a new clip-sharing feature 6"
+          "Edge Prime Video  a new clip-sharing feature 6"
       )
     }
   ],

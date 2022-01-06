@@ -7,7 +7,7 @@ import { Trans,Translation } from "react-i18next";
 import i18n from '../i18n';
 import $ from 'jquery'
 
-function Section1({  section1text }) {
+function Section1() {
  useEffect(() => {
       console.log("search ")    
     })
@@ -19,7 +19,8 @@ function Section1({  section1text }) {
       {
         (t, {i18n}) =>  <span>{t('Section1text')}</span> 
       }
-    </Translation>   
+    </Translation> 
+  
           <a
             href="https://f8twv0pnpma.typeform.com/hacklabuzvluk"
             target="_blank"
@@ -38,11 +39,7 @@ function Section1({  section1text }) {
   );
 }
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    section1text: state.section1text
-  };
-};
 
-export default connect(mapStateToProps)(Section1);
+
+export default Section1;
 

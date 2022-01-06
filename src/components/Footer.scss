@@ -16,8 +16,8 @@
   }
   .child-one{
     @include size($w: 40%, $h: 395px);
-    @include font($fs: clamp(20px,1.5972vw,23px), $fm: "Montserrat");
-    @include displayflex($fd:column,$ai:space-between,$jc:center)
+    @include font($fs: clamp(18px,1.5272vw,22px), $fm: "Montserrat");
+    @include displayflex($fd:column,$ai:space-between,$jc:center);
     @include mp($p: clamp(15px,3.4722vw,50px));
     border-right:1px solid #fff;
     @media screen and (max-width: 850px) {
@@ -27,32 +27,20 @@
       }
 
     img{
-      @include size($w:clamp( 100px,20.9027vw,301px));
+      @include size($w:clamp( 180px,20.9027vw,301px));
       margin-bottom:50px;
 
     }
     .right{
-      @include font($fs: 16px, $fm: "Montserrat",  $fw: 200);   
+      @include font($fs: 16px, $fm: "Montserrat",  $fw: 200);
+      @include media($d: 850px, $di: none);
     }
-    .end11{
-        display:none;
-       @include font($fs: 16px, $fm: "Montserrat",  $fw: 200); 
-         @media screen and (max-width: 850px) {
-         display:block;
-         text-align: right;
-         margin-top: -25px;
-         } 
-          @media screen and (max-width: 600px) {
-         display:block;
-         text-align: left;
-         margin-top: 10px;
-         } 
-    }
+   
   }
   .child-two{
     @include size($w: 20%);
-    @include displayflex($fd:column,$ai:space-between,$jc:center)
-    @include font($fs: clamp(20px,1.5972vw,23px), $fm: "Montserrat", $ta: left,  $lh: 35px, $fw:400);
+    @include displayflex($fd:column,$ai:space-between,$jc:center);
+    @include font($fs: clamp(18px,1.5272vw,22px), $fm: "Montserrat", $ta: left,  $lh: 35px, $fw:400);
        @include mp($p: clamp(15px,3.4722vw,50px));
      
         @media screen and (max-width: 850px) {
@@ -79,23 +67,21 @@
        
       }
     }
-    // @media screen and (max-width: 499px) {
-    //   border-bottom: 1px solid #fff;
-    //   }
+
     .facebook, .instagram, .linkedin {
       z-index: 5;
 
       &:hover{
-        @include font($fs: clamp(20px,1.5972vw,23px), $fm: "Montserrat", $ta: left,  $lh: 35px, $fw:600);
+        @include font($fs: clamp(18px,1.5272vw,22px), $fm: "Montserrat", $ta: left,  $lh: 35px, $fw:600);
       }
     }
   }
   .child-three{
-    @include displayflex($fd:column,$ai:space-between,$jc:center)
+    @include displayflex($fd:column,$ai:space-between,$jc:center);
     z-index: 5;
     @include size($w: 40%,$h: 395px);
-    @include font($fs: clamp(20px,1.5972vw,23px), $fm: "Montserrat", $lh: 49px);
-     @include mp($p: clamp(15px,3.4722vw,50px));
+    @include font($fs: clamp(18px,1.5272vw,22px), $fm: "Montserrat", $lh: 49px);
+    @include mp($p: clamp(15px,3.4722vw,50px));
     border-left:1px solid #fff;
     a{
       color:#fff;
@@ -114,22 +100,22 @@
       border-left: 0px; 
       border-right:0px; 
       border-top:1px solid white;  
-      padding-bottom: 90px;
+      padding-bottom: 15px;
        @include size($w: 100%, $h: auto);  
       }
     .home-hov, .layiheler, .faq-hover{
       &:hover{
-        @include font($fs: clamp(20px,1.5972vw,23px), $fm: "Montserrat", $ta: left,  $lh: 49px, $fw:600); 
+        @include font($fs: clamp(18px,1.5272vw,22px), $fm: "Montserrat", $ta: left,  $lh: 49px, $fw:600); 
       }
     }
     .two-two{
       @include displayflex($jc: space-between);
       .up{
-        @include font($fs: 18px, $fm: "Montserrat", $ta: left, $c: #FFFFFF);
+        @include font($fs: clamp(16px,1.25vw,18px), $fm: "Montserrat", $ta: left, $c: #FFFFFF);
 
         text-decoration: none;
         &:hover{
-          @include font($fs: 18px, $fm: "Montserrat", $ta: left, $fw:600);  
+          @include font($fs: clamp(16px,1.25vw,18px), $fm: "Montserrat", $ta: left, $fw:600);  
         }
       }
     }
@@ -152,8 +138,7 @@
         width: 30px;
         height: 30px;
         filter:invert(100%);
-       @media screen and (max-width: 850px) {
-       
+       @media screen and (max-width: 850px) {     
           width: 20px;
           height: 20px;
       }
@@ -162,26 +147,36 @@
       }
       input{
         @include size($h: 48px);
-        @include font($fs: 21px, $fm: "Montserrat", $ta: left, $c: #FFFFFF);
+        @include font($fs: 22px, $fm: "Montserrat", $ta: left, $c: #FFFFFF);
         @include mp($p: 20px 55px 20px 10px, $m: 0px 0px 0px 0px);
         background: #1B1B1B;
         border: 1px solid #FFFFFF;
         position: absolute; 
         border-radius: 0px;
-         @media screen and (max-width: 850px) {
-         
-      }
+        outline: none;
+        @include brauzer($br: 0px);
+        
       }
     }
     .end1{
-
       @include font($fs: 16px, $fm: "Montserrat", $ta: right, $c: #FFFFFF,  $fw: 200);
       @include mp($m: 100px 0px 0px 0px);  
       line-height: 30px;
-      @media screen and (max-width: 850px) {
-      display: none;  
-      }
-    
+      @media screen and (max-width: 600px) {
+         text-align: left;
+         margin-top: 80px;
+         } 
     }
+    .right1{
+        @include font($fs: 16px, $fm: "Montserrat",  $fw: 200);
+        display: none;
+        margin-top: -33px;
+        @include media($d: 850px, $di: block);
+        @media screen and (max-width: 600px) {
+         text-align: left;
+         margin-top: 3px;
+         } 
+
+      }
   }
 }

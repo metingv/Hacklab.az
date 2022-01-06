@@ -27,6 +27,12 @@ function Navbar({ displaymode }) {
        $(".tuc").on("mouseleave", function (e) {
       $("li a.active").css("border-bottom", "3px solid black");
     }); 
+        $(".tuc").on("touchmove", function (e) {
+      $("li a.active").css("border-bottom", "0px");
+    }); 
+       $(".tuc").on("touchstart", function (e) {
+      $("li a.active").css("border-bottom", "0px");
+    }); 
      
 
   });
@@ -47,6 +53,7 @@ function Navbar({ displaymode }) {
     $(".dropdown-item3").css("display", "none");  
   } 
     //$(".dropdown-item1").css("display", "none");
+   
   
   }, []);
 
@@ -121,7 +128,7 @@ function Navbar({ displaymode }) {
         </li>
          <li>
           <NavLink to="/blog">
-            <div className="tuc">Blog</div>
+            <div className="tuc">Bloq</div>
             <div className="tuc-hov"></div>
           </NavLink>
         </li>        

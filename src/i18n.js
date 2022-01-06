@@ -11,6 +11,7 @@ i18n
   .use(initReactI18next) 
   .init({
     // we init with resources
+    lng: "aze",  // default language
     resources: {
       aze: {
         translations: translationAZ
@@ -22,7 +23,7 @@ i18n
         translations: translationRU
       }
     },
-    fallbackLng: "aze",
+    fallbackLng: false,
     debug: true,
 
     // have a common namespace used around the full app

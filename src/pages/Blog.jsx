@@ -45,7 +45,7 @@ const { pathname } = useLocation();
           />
         </div>
         <div className="blogcontent">
-          <div className="blogtitle"> Bloglar </div>
+          <div className="blogtitle"> Bloqlar </div>
           <div className="blogdivs">
             {text3.map((tex) => {
               return (

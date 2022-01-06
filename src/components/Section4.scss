@@ -1,5 +1,6 @@
 @import "../formul";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 .Section4{
   @include displayflex;
@@ -8,7 +9,7 @@
   @include media($d:600px, $m: 70px 0px);
   .div1{
     padding:clamp(15px,3.125vw,45px) clamp(15px,4.5138vw,65px);
-    @include size($w:80%,$h:auto,$mw:730px);
+    @include size($w:90%,$h:auto,$mw:730px);
     background: #222222;
     @include displayflex($fd:column,$ai:flex-end,$jc:flex-start);
    span{
@@ -43,11 +44,11 @@
   // padding: 0px 48px;
   color: #fff; /* button text color */
   outline: none;
-  background: transparent;
+  background: #fff;
   border: none;
   float:right;
   margin-top: clamp(15px, 2.08333vw, 30px);
-   @include font($fw:500,$fm:'Montserrat',$fs:clamp(14px,1.5277vw,20px),$c:#fff,$ta:center);
+  @include font($fw:600,$fm:'Montserrat',$fs:clamp(14px,1.5277vw,20px),$c:#000,$ta:center);
   line-height: 2;
   position: relative;
   display: inline-block;
@@ -56,8 +57,8 @@
   overflow: hidden;
   transition: all 0.5s;
   @media screen and (max-width:700px) { 
-    width: 150px!important;
-    height: 40px;
+    width: 160px!important;
+    height: 35px;
     padding: 0px 17px;
 
   }

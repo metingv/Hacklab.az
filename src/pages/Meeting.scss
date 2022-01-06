@@ -18,7 +18,7 @@
     @include displayflex($fd:column,$ai:space-between,$jc:center);
     @include size($w:100%,$h:'',$mw:'',$mh:'',$minh:'');
     @include font($fw:400,$fm:'',$fs:'',$c:'',$ta:'',$lh:'',$ls:'');
-    @include mp($m:0px, $p:0px 20px);
+    @include mp($m:0px, $p:0px 10px);
  
    
 
@@ -31,8 +31,9 @@
     }
     .meeting-text{
       @include font($fw:400,$fm:'Montserrat',$fs:clamp(20px, 1.5277vw, 22px),$c:'',$ta:center,$lh:1.73.61vw,$ls:'');
-      @include mp($m:0 0 40px 0,$p:0px clamp(20px,6.9444vw,100px));
+      @include mp($m:0 0 40px 0,$p:0px clamp(20px, 6.9444vw, 100px));
       @include size($w:100%,$h:'',$mw:'',$mh:'',$minh:'');
+      @include media($d:500px, $p:0px 0px);
       text-align: center;
       z-index:10;
     }
@@ -52,7 +53,7 @@
        
      
         .alt{  
-          background: #E3E3E3;
+          background: rgba(247, 245, 245, 0.6);
           box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
           @include mp($p:0px clamp(25px, 2.5vw, 36px) 0px clamp(25px, 2.9166vw, 42px));
           @include size($w:clamp(300px,27.7777vw, 400px),$h:'',$mw:'',$mh:"",$minh:'');
@@ -61,7 +62,7 @@
           .time{
             @include mp($m: clamp(25px, 2.7777vw, 30px) 0 clamp(25px, 2.7777vw, 30px) 0);
             -webkit-text-stroke: 2px #000000;
-            -webkit-text-fill-color: #E3E3E3;
+            -webkit-text-fill-color: rgba(247, 245, 245, 0.6);
             -webkit-animation: fill 0.5s infinite alternate;
             text-align: left;
             @include font($fw:600,$fm:'Montserrat',$fs:clamp(45px, 4.8611vw, 70px),$c:'',$ta:left,$lh:clamp(50px, 5.9027vw, 85px),$ls:'');
@@ -115,7 +116,7 @@
   border: none;
   float:right;
   margin-top: clamp(15px, 2.08333vw, 30px);
-   @include font($fw:500,$fm:'Montserrat',$fs:clamp(14px,1.5277vw,20px),$c:#333,$ta:center);
+   @include font($fw:600,$fm:'Montserrat',$fs:clamp(14px,1.5277vw,20px),$c:#000,$ta:center);
   line-height: 2;
   position: relative;
   display: inline-block;
@@ -124,7 +125,7 @@
   overflow: hidden;
   transition: all 0.5s;
   @media screen and (max-width:700px) { 
-    width: 150px!important;
+    width: 160px!important;
     height: 40px;
     padding: 0px 17px;
 

@@ -4,15 +4,13 @@
 
 .Section2{ 
  @include size($h:auto,$w:100vw);
-
  @include mp($m: clamp(20px,6.9444vw,100px) 0px 0px 0);
  @include displayflex;
  overflow: hidden;
  @media screen and (max-width:500px) {      
-      @include mp($m: 0px 0px 0px 0);      
-   } 
+    @include mp($m: 0px 0px 0px 0);      
+  } 
 
- 
 .divs1{
    z-index:10;
    @include size($w:100%,$h:auto);
@@ -26,15 +24,12 @@
       margin-top:20px;
       background: rgba(247, 245, 245, 0.6);
       @include displayflex($fd:column,$ai:center,$jc:flex-start);
-      @include size($w:295px,$h:auto);
+      @include size($w:295px,$h:290px);
        transition:all 0.3s ease-in;    
        @include media ($d:698px,$w:60%,$m:20px 0px 0px 0px);
        @include media ($d:500px,$w:70%,$m:20px 0px 0px 0px); 
        padding:50px;
-       margin-right:20px;
-
-
-       
+       margin-right:20px;    
       img{
         @include size($w:112px,$h:112px);
         object-fit: cover;   
@@ -45,16 +40,14 @@
       }
       .content{
         @include font($fw:400,$fm:'Montserrat',$fs:20px,$c:#000,$ta:center);
-         position: absolute;
-         padding: 20px 20px;
-         margin-top:-50px;
+         padding: 20px 0px;
+         margin: -210px -30px 0px -30px;
+     
       }
       .d1,.d2,.d3,.d4{
-         transform: rotateY(180deg);
-         visibility: hidden ;
+         opacity: 0;
       }
    }
-  }
-  
+  } 
 }
  

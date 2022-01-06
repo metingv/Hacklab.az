@@ -8,7 +8,21 @@ import { connect } from "react-redux";
 const Footer = ({deletecard}) => {
   const history = useHistory();
   const [search, setSearch] = useState("");
-  
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+  if(search == "" || search == null || search == undefined ){
+   alert("netice tapilmadi")
+   console.log("searchfooter " + search)
+  }
+  else{
+     history.push("/aftersearch");
+     deletecard(search);
+  }
+    }
+  }
+
+
   const handleChange = (e) => {
     setSearch(e.target.value.trim());
   };
@@ -38,7 +52,7 @@ const Footer = ({deletecard}) => {
               Ünvan: Bakı şəhəri, Atatürk pr. 30A<br/>Bakı, Azərbaycan
             </p>
             <span className="right">2021. Bütün hüquqlar qorunur.</span>
-            <div className="end11">site by: ZOOM Agency</div>
+            
           </div>
           <div className="child-two">
             <p className="facebook">
@@ -74,12 +88,13 @@ const Footer = ({deletecard}) => {
               <a target="_blank" href="https://www.linkedin.com/company/hacklabaz" className="faq-hover">Linkedin</a>
             </p>
             <div className="search-icon">
-              <input type="text" onChange={handleChange}  id="search_text" placeholder="Axtar" autocomplete="off" />
+              <input type="text" onChange={handleChange} onKeyDown={handleKeyDown}  id="search_text" placeholder="Axtar" autocomplete="off" />
               <div class="fa-search1"  onClick={handleClick}>
                 <img src="https://i.ibb.co/Yjc7Q3K/Whats-App-Image-2021-10-29-at-14-25-33-removebg-preview.png" />
               </div>
             </div>
             <div className="end1">site by: ZOOM Agency</div>
+            <div className="right1">2021. Bütün hüquqlar qorunur.</div>
           </div>
         </div>
       </div>

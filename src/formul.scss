@@ -10,14 +10,7 @@ $maincolor: rgb(199, 175, 179);
   max-height:$mh;
   min-height:$minh;
  }
-
-
- @mixin clamp($miv:'',$fv:'',$mv:''){
-  width: clamp($miv,$fv,$mv);
-  height: clamp($miv,$fv,$mv);
-  font-size: clamp($miv,$fv,$mv);
- }
-
+ 
  @mixin font($fw:400,$fm:'',$fs:'',$c:'',$ta:'',$lh:'',$ls:''){
   font-weight: $fw;
   font-family: $fm;
@@ -42,14 +35,8 @@ $maincolor: rgb(199, 175, 179);
 @mixin border(){
   border: 2px solid red;
  }
-@mixin border1(){
-  border: 2px solid green;
- }
-@mixin border2(){
-  border: 2px solid blue;
- }
 
-@mixin media ($d:'',$w:'',$mw:'',$fs:'',$h:'',$p:'',$m:'',$fd:'',$c:'',$di:'',$lh:'',$fw:'',$miw:'',$ta:'',$bb:'',$b:'') {
+@mixin media ($d:'',$w:'',$mw:'',$fs:'',$h:'',$p:'',$m:'',$fd:'',$c:'',$di:'',$lh:'',$fw:'',$miw:'',$ta:'',$b:'') {
   @media screen and (max-width: $d) {
    display: $di;
    width: $w;
@@ -64,8 +51,27 @@ $maincolor: rgb(199, 175, 179);
    line-height: $lh;
    flex-wrap:$fw;
    text-align: $ta;
-   border-bottom: $bb;
    border: $b;
   }
 }
+
+
+
+@mixin brauzer($br:''){
+   -moz-border-radius: $br!important;
+   -webkit-border-radius: $br!important;
+   -ms-border-radius: $br!important;
+   -o-border-radius: $br!important;
+   -webkit-appearance: none;
+   -ms-appearance: none;
+   -moz-appearance: none;
+   -o-appearance: none;
+    appearance: none;
+ }
+
+ @mixin background($bp:'',$br:'',$bs:''){
+   background-position: $bp; 
+   background-repeat: $br; 
+   background-size: $bs; 
+ }
 

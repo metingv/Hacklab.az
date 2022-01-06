@@ -19,11 +19,9 @@ z-index:10000;
   width: 58px;
   @include font($fs: 20px, $ta: center, $fw: 600, $c: black, $fm: 'Montserrat');
   text-transform:uppercase;
-
     @media screen and (max-width: 1027px) {
       border:1px solid #fff;
       color: #fff;
-      
     }
 }
 button:focus{
@@ -58,8 +56,6 @@ button:focus{
   }
 }
 //-------------------dropdown---- finish
-
-
 img{
   @include size($w:260px,$h:58px);
   @include media ($d:500px,$w:170px,$h:38px);
@@ -111,7 +107,6 @@ ul{
     position: fixed;
     right:-60%;   //other ideya right:0%; width:0% jquery => width:55%
     top:0%;
-    // background: #423a3a;
     background: #333333;
     height: 100%;
     width: 80%;
@@ -140,14 +135,25 @@ ul{
      flex-direction: column;
      align-items: center;
      justify-content: center;
+     -webkit-appearance: none;
+     -ms-appearance: none;
+     -moz-appearance: none;
+     -o-appearance: none;
       &.active{
-      border-bottom:3px solid black;
-      @media screen and (max-width: 1027px) {
-        border-bottom:3px solid #fff;
+        border-bottom:3px solid black;
+        @media screen and (max-width: 1027px) {
+            -moz-border: 0px solid #333333 !important;
+            -webkit-border: 0px solid #333333!important;
+            -ms-border: 0px solid #333333!important;
+            -o-border: 0px solid #333333!important;
+             border:0px solid #333333!important;
+          .tuc{
+            -webkit-text-stroke: 1px #fff;
+              -webkit-text-fill-color: #fff;
+          }
+          
+        }
       }
-
-    }
-    
     }
    
     @media screen and (max-width: 1027px) {
@@ -165,20 +171,25 @@ ul{
       margin-top: -2px;
     }
     .tuc{
-     width: 100%;  
+      width: 100%;  
+      border-bottom: 2px solid transparent;
+      @include font($fw:500,$fm:'Montserrat',$fs:20px, $ta:center);
      @media screen and (max-width: 1027px) {
-      width: 100%;
+       width: 100%;
+      -webkit-text-stroke: 1px #fff;
+      -webkit-text-fill-color: transparent;
+      @include font($fw:700,$fm:'Montserrat',$fs:clamp( 30px, 5.5555vw, 40px), $ta:center);
      }
-     border-bottom: 2px solid transparent;
-     @include font($fw:500,$fm:'Montserrat',$fs:20px, $ta:center);
-
-    
+      @media screen and (max-width: 750px) {
+      -webkit-text-stroke: 0.5px #fff;
+     }
      &:hover ~ .tuc-hov,  &:hover{
-      @include font($fw:600,$fm:'Montserrat',$fs:20px, $ta:center);
+       @include font($fw:600,$fm:'Montserrat',$fs:20px, $ta:center);
         width: 100%!important; 
         transition: width 1s ease;
          @media screen and (max-width: 1027px) {
          background: transparent;
+          @include font($fw:700,$fm:'Montserrat',$fs:clamp( 30px, 5.5555vw, 40px), $ta:center);
          }
     }
  

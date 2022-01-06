@@ -35,11 +35,11 @@
     .faqdivs{
        padding: 0px 0px 20px 0px;
        z-index:2;
-       @include font($fw:400,$fm:'Montserrat',$fs:28px,$c:#000000,$lh:35px);
-       @include size($w:80%,$h:'',$mw:1030px,$mh:'');
+       @include font($fw:400,$fm:'Montserrat',$fs:26px,$c:#000000,$lh:35px);
+       @include size($w:90%,$h:'',$mw:1030px,$mh:'');
        @include  media ($d:900px,$fs:22px);
        @include  media ($d:530px,$fs:18px);
-       background: rgba(227, 227, 227, 0.8);
+       background: rgba(247, 245, 245, 0.6);
       //  @include mp($p:0px 24px 0px 24px);
        .line{
          border-top: 1px solid black;
@@ -48,17 +48,17 @@
          display: none;     
        }
        .icerik{
-         background: #E3E3E3;
+         background: rgba(247, 245, 245, 0.6);
          display: none;
          @include mp($p:10px 24px 0px 24px);
          @include size($w:100%,$h:'',$mw:1030px,$mh:'');
          @include font($fw:400,$fm:'Montserrat',$fs:18px,$c:#000000,$lh:25px);
          @include  media ($d:775px,$fs:18px);
-         @include  media ($d:530px,$fs:14px, $p:0px 24px 0px 24px);
+         @include  media ($d:530px,$fs:14px, $p:0px 15px 0px 24px);
        }
        .icerikl{
          padding-right: 24px;
-         font-size: clamp(25px,3.125vw,45px);
+         font-size: clamp(25px,2.4305vw,35px);
        }
        .i13{
         @include mp($p: 10px 24px 20px 24px);
