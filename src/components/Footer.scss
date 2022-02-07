@@ -95,7 +95,9 @@
       }
 
     }
-    
+     @media screen and (max-width: 1366px) {
+      justify-content: flex-start;
+     }
     @media screen and (max-width: 850px) {
       border-left: 0px; 
       border-right:0px; 
@@ -103,6 +105,7 @@
       padding-bottom: 15px;
        @include size($w: 100%, $h: auto);  
       }
+
     .home-hov, .layiheler, .faq-hover{
       &:hover{
         @include font($fs: clamp(18px,1.5272vw,22px), $fm: "Montserrat", $ta: left,  $lh: 49px, $fw:600); 
@@ -162,17 +165,24 @@
       @include font($fs: 16px, $fm: "Montserrat", $ta: right, $c: #FFFFFF,  $fw: 200);
       @include mp($m: 100px 0px 0px 0px);  
       line-height: 30px;
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 1366px) {
+         @include mp($m: 80px 0px 0px 0px);  
+      }
+       @media screen and (max-width: 950px) {
+         @include mp($m: 85px 0px 0px 0px);  
+
+      }
+      @media screen and (max-width: 850px) {
          text-align: left;
          margin-top: 80px;
-         } 
+      } 
     }
     .right1{
         @include font($fs: 16px, $fm: "Montserrat",  $fw: 200);
         display: none;
         margin-top: -33px;
         @include media($d: 850px, $di: block);
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 850px) {
          text-align: left;
          margin-top: 3px;
          } 

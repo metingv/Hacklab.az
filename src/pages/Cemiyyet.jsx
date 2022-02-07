@@ -6,13 +6,14 @@ import Section5 from "../components/Section5";
 import { NavLink, withRouter ,useLocation} from "react-router-dom";
 import { connect } from "react-redux";
 import React, { useState, useEffect } from "react";
-import { Trans,Translation } from "react-i18next";
 import i18n from '../i18n';
 import $ from "jquery";
+import {  useTranslation,Trans,Translation } from "react-i18next";
 
 function Cemiyyet({ text5 = [], displaymode1 }) {
 
 const { pathname } = useLocation();
+ const { t, i18n } = useTranslation();
   
    useEffect(() => {
     window.scrollTo(0, 0);
@@ -47,7 +48,7 @@ const { pathname } = useLocation();
             alt=""
           />
         </div>
-           <h1 id="Cemiyyet" >Cəmiyyət</h1>
+           <h1 id="Cemiyyet" >{t('Navbarli2')}</h1>
         <div className="sectionone">
           <div className="text">
             <div>

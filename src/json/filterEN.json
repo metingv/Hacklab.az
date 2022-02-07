@@ -5,9 +5,79 @@
   "text0": [
   { 
     "link":"/#Section1",
-    "title": "Thoughts alone cannot change anything. A technology-opening door where you can explore the world of your hacklab and take part in its future construction."
+    "title": "Hacklab is a door to a new technological world that wants to introduce you the technological areas you will meet in the future without wasting time."
+  },
+  { 
+    "link":"/fond",
+    "title":"The Hacklab Fund is established by the Hacklab Society and is created to meet the operating costs and needs of the Society. Part of the final profit of the Seed Fund is always spent for the Society. The Fund supports The Society and vice versa. The Fund is conditioned by the Limited Liability Company. Members of the Society have the opportunity to become investors in the Fund without a minimum obligation. "
+  },
+   { 
+    "link":"/cemiyyet#Cemiyyet",
+    "title":"As a Hacklab Society, it is a society that supports ideas, opinions that are thought together, analyzed, and decided upon, rather than alone. The interests of the Hacklab Society are related to Industry 4.0. Our interests; Blockchain & Crypto, Big Data, Internet of Things (IoT), Additive Manufacturing, Robotics."
+  },
+  {
+   "link":"/meeting",
+   "title":"Our society wil  organize various types of Lectures, Courses, Research, Workshops, Entertainment and social events by prioritizing İndustry 4.0 ,thus, they will be managed by the society. The speakers at our seminars and events are experts in their field, and the participants will also be selected from people who are interested in the field and have sufficient knowledge. Our community accepts applications worldwide so you can join us online."  
   }
 
-]
+],
+
+
+
+  "text2": [
+{
+  "link": "/faq",
+  "title": "What is our Society ?"
+},
+{
+  "link": "/faq",
+  "title": "Members"
+},
+{
+  "link": "/faq",
+  "title": "How do we meet our expenses?"
+},
+{
+  "link": "/faq",
+  "title": "What are the expectations from the members?"
+},
+{
+  "link": "/faq",
+  "title": "What detaches our society from coworking spaces?"
+},
+{
+  "link": "/faq",
+  "title": "How does our Society help field professionals or those who want to become professionals?"
+},
+{
+  "link": "/faq",
+  "title": "Who can be a member?"
+},
+{
+  "link": "/faq",
+  "title": "When can you become a member?"
+},
+{
+  "link": "/faq",
+  "title": "What internal events do we have?"
+},
+{
+  "link": "/faq",
+  "title": "When can you graduate?"
+},
+{
+  "link": "/faq",
+  "title": "Why is the fund created?"
+},
+{
+  "link": "/faq",
+  "title": "Is it invested only in the companies of the members of the Society?"
+},
+{
+  "link": "/faq",
+  "title": "What investment rights does the Society have when starting a new company?"
+}
+  ]
+
 
 }

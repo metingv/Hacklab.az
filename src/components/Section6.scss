@@ -1,5 +1,6 @@
 @import "../formul";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600&display=swap');
 
 .Section6{
    padding-top:clamp(70px,8.3333vw,120px);
@@ -43,7 +44,7 @@
             -webkit-text-fill-color: rgba(247, 245, 245, 0.6);
             -webkit-animation: fill 0.5s infinite alternate;
             text-align: left;
-            @include font($fw:600,$fm:'Montserrat',$fs:clamp(45px, 4.8611vw, 70px),$c:'',$ta:left,$lh:clamp(50px, 5.9027vw, 85px),$ls:'');
+            @include font($fw:600,$fm:Be Vietnam Pro,$fs:clamp(45px, 4.8611vw, 70px),$c:'',$ta:left,$lh:clamp(50px, 5.9027vw, 85px),$ls:'');
             @media screen and (max-width: 900px){
               -webkit-text-stroke: 1px #000000;
             }
@@ -57,7 +58,7 @@
           @include font($fw:500,$fm:'Montserrat',$fs:clamp(18px, 1.7361vw, 25px),$c:'',$ta:left,$lh:2.0833vw,$ls:'');
           }
           .time-button{
-            @include mp($m: clamp(30px, 5.5555vw, 80px) 0 clamp(25px, 2.5694vw, 37px) 0);
+            @include mp($m: clamp(30px, 5.5555vw, 40px) 0 clamp(25px, 2.5694vw, 37px) 0);
             @include displayflex($ai:center,$jc:center);      
             @include font($fw:600,$fm:'Montserrat',$fs: clamp(14px,2.5622vw,35px),$c:'',$ta:left,$lh:'',$ls:'');
             button{

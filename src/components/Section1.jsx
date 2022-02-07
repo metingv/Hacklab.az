@@ -20,7 +20,6 @@ function Section1() {
         (t, {i18n}) =>  <span>{t('Section1text')}</span> 
       }
     </Translation> 
-  
           <a
             href="https://f8twv0pnpma.typeform.com/hacklabuzvluk"
             target="_blank"
@@ -29,7 +28,11 @@ function Section1() {
             value="Subscribe"
             class="buttonfx curtainup"
           >
-            ÜZV OLMAQ
+            <Translation i18n={i18n} >
+            {
+              (t, {i18n}) =>  <>{t('Section1button')}</> 
+            }
+            </Translation> 
           </a>
       </div>
       <div class="gif">

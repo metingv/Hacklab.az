@@ -5,11 +5,14 @@ import Section4 from "../components/Section4";
 import Section5 from "../components/Section5";
 import { NavLink, withRouter,useLocation } from "react-router-dom";
 import { connect } from "react-redux";
-import React, { useState, useEffect } from "react"; 
+import React, { useState, useEffect } from "react";
+import { useTranslation,Trans,Translation } from "react-i18next"; 
+import i18n from '../i18n'; 
 import $ from "jquery";
  
 function Meeting({ text4 = [], displaymode1 }) {
 const { pathname } = useLocation();
+ const { t, i18n } = useTranslation();
   
    useEffect(() => {
     window.scrollTo(0, 0);
@@ -44,15 +47,13 @@ const { pathname } = useLocation();
           />
         </div>
         <div className="meetingcontent">
-          <div className="meetingtitle"> Tədbirlər </div>
+          <div className="meetingtitle"> {t('Navbarli3')} </div>
           <p className="meeting-text">
-            Cəmiyyətimiz Sənaye 4.0 sahəsini prioritet götürərək müxtəlif
-            növ Mühazirələr, Kurslar, Araşdırmalar, “Workshop”lar, Əyləncəli və
-            sosial tədbirlər təşkil edəcəkdir və onlar cəmiyyət tərəfindən idarə
-            olunacaqdır. Bizim seminarlar və tədbirlərdə spikerlər öz işlərinin
-            peşəkarı olan ekspertlərdir və həmçinin, seminar iştirakçıları da bu
-            sahəyə marağı olan və kifayət qədər biliyə malik insanlardan
-            seçiləcəkdir.
+             <Translation i18n={i18n} >
+      {
+        (t, {i18n}) => <span>{t('Meetingtext')}</span>
+      }
+           </Translation>     
           </p>
           <div className="meetingdivs">
             {text4.map((tex) => {

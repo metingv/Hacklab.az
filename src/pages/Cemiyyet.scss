@@ -34,7 +34,7 @@
         @include mp($p: 0px 20px 20px 20px, $m: 0px );
       }
      div{
-        @include font($fw:400,$fm:Montserrat,$fs:clamp(14px, 1.4641vw, 20px),$c:'',$ta:'',$lh:23px);
+        @include font($fw:400,$fm:Montserrat,$fs:clamp(14px, 1.4741vw, 21px),$lh:25px);
       }
    
     }

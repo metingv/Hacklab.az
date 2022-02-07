@@ -6,9 +6,12 @@ import Section4 from "../components/Section4";
 import { connect } from "react-redux";
 import React, { useState, useEffect } from "react";
 import $ from "jquery";
+import {  useTranslation,Trans,Translation } from "react-i18next";
+import i18n from '../i18n';
 
 function Blog({ text3 = [], displaymode1 }) {
 const { pathname } = useLocation();
+ const { t, i18n } = useTranslation();
   
    useEffect(() => {
     window.scrollTo(0, 0);
@@ -45,7 +48,7 @@ const { pathname } = useLocation();
           />
         </div>
         <div className="blogcontent">
-          <div className="blogtitle"> Bloqlar </div>
+          <div className="blogtitle"> {t('Blogtitle')} </div>
           <div className="blogdivs">
             {text3.map((tex) => {
               return (

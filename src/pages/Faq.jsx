@@ -6,6 +6,9 @@ import Section5 from "../components/Section5";
 import { connect } from "react-redux";
 import gif1 from "../assets/dalga.gif";
 import React, { useState, useEffect } from "react";
+import { useTranslation,Trans,Translation } from "react-i18next";
+import { Markup } from "interweave"
+import i18n from '../i18n';
 import $ from "jquery";
 
 function Faq({ text2 = [],displaymode1 }) {
@@ -13,6 +16,7 @@ function Faq({ text2 = [],displaymode1 }) {
  useEffect(() => { 
    $(".cursor").css("border", "1px solid black"); 
    },[])
+  const { t, i18n } = useTranslation();
    
   useEffect(() => {
     $(".footer").bind("mouseenter", function (e) {
@@ -63,7 +67,7 @@ function Faq({ text2 = [],displaymode1 }) {
         }
       });
     }
-  });
+  },[]);
   return (
     <>
       <Navbar />
@@ -76,17 +80,28 @@ function Faq({ text2 = [],displaymode1 }) {
           />
         </div>
         <div class="faqcontent">
-          <div className="ta">FAQ</div>
+          <div className="ta">{t('Navbarli4')}</div>
           <div className="faqdivs">
             {text2.map((tex) => {
               return (
                 <>
                   <div className={`faqdivsin  ${tex.t} `}>
-                    <div className={`title`}> {tex.title} </div>
+                    <div className={`title`}>
+                <Translation i18n={i18n} >
+                 {
+                    (t, {i18n}) => <span>{t(tex.title)}</span>
+                 }
+                 </Translation>
+
+                     </div>
                     <div className={`icerikl ${tex.s} `}> + </div>
                   </div>
                   <div className={`icerik ${tex.i} `}>
-                    {tex.content}
+                      <Translation i18n={i18n}   >
+                 {
+                    (t, {i18n}) => <span><Markup content={t(tex.content)} /></span> 
+                 }
+                 </Translation>
                     <div className={`line ${tex.l} `}></div>
                   </div>
                 </>

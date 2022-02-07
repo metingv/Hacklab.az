@@ -11,8 +11,9 @@ import i18n from '../i18n';
 
 
 function afterSearch ({ s = [] }) {
-
+  
 const { pathname } = useLocation();
+const { t, i18n } = useTranslation();
   
    useEffect(() => {
     window.scrollTo(0, 0);
@@ -42,7 +43,7 @@ const { pathname } = useLocation();
   return (
     
     <div id="up" className="afterSearch">
-    <div className="title">Axtarışa uyğun nəticələr</div>
+    <div className="title">{t('afterSearchtitle')}</div>
     {
      s.map((search1) => {
       return(
@@ -63,7 +64,7 @@ const mapStateToProps = (state, ownProps) => {
 console.log("afters" + state.search)
 if (i18n.resolvedLanguage == "aze") {
     return {
-      s: state.RootReducer1.s
+       s: state.RootReducer1.s
     }
   } 
  else if (i18n.resolvedLanguage == "en") {

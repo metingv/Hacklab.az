@@ -18,31 +18,33 @@
    @include media ($d:1290px,$w:70%,$m:120px 0 0 0,$fw:wrap);
    @include media ($d:970px,$w:100%,$fw:wrap);
    @include media ($d:698px,$h:auto, $m:40px 0 0 0);
+
  
    .div1{
+      position: relative;
       z-index:10;
       margin-top:20px;
       background: rgba(247, 245, 245, 0.6);
-      @include displayflex($fd:column,$ai:center,$jc:flex-start);
-      @include size($w:295px,$h:290px);
-       transition:all 0.3s ease-in;    
+      transition:all 0.5s ease-in;  
+       @include displayflex($fd:column,$ai:center,$jc:center);
+       @include size($w:295px,$h:290px);    
        @include media ($d:698px,$w:60%,$m:20px 0px 0px 0px);
        @include media ($d:500px,$w:70%,$m:20px 0px 0px 0px); 
-       padding:50px;
+       padding:0px 20px;
        margin-right:20px;    
       img{
         @include size($w:112px,$h:112px);
         object-fit: cover;   
+
       }
       .title{
         @include font($fw:500,$fm:'Montserrat',$fs:34px,$c:#000);
         @include media ($d:698px,$fs:28px);
       }
       .content{
-        @include font($fw:400,$fm:'Montserrat',$fs:20px,$c:#000,$ta:center);
-         padding: 20px 0px;
-         margin: -210px -30px 0px -30px;
-     
+         @include font($fw:400,$fm:'Montserrat',$fs:20px,$c:#000,$ta:center);
+         position: absolute;
+         padding:0px 20px;
       }
       .d1,.d2,.d3,.d4{
          opacity: 0;

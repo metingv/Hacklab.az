@@ -1,18 +1,122 @@
 {
- "navbardrop":"EN",
-          "Section1text":
-            "Thoughts alone cannot change anything. A technology opening door where you can explore the world of your hacklab and take part in its future construction.",
-          "title1": "Experts",
-          "content1":
-            "The members of the society are specialists in the field who have worked and continue to work in many technological fields.",
-          "title2": "Industry",
-          "content2":
-            "The priority areas of our activity are robotics, calf analysis, IoT, blockchain and other areas of Industry 4.0.",
-          "title3": "Antiincubator",
-          "content3":
-            "To join, you do not need to open a company and wait for funding at any time.",
-          "title4": "Investment",
-          "content4":
-            "As a member of the society, you get a chance to take advantage of the company's investment opportunities for your projects."
+"comment":   "------------------------Navbar Page------------------------------------",   
+    
+    "navbardrop":"EN",
+	"Navbarli1":"Fund",
+	"Navbarli2":"Society",
+	"Navbarli3":"Events", 
+	"Navbarli4":"FAQ",
+	"Navbarli5":"Blog",
+
+
+
+"comment":   "------------------------afterSearch Page------------------------------------",  
+"afterSearchtitle": "Search results",
+ 
+
+
+ "comment":   "------------------------Footer Page------------------------------------",     
+
+     "Footerli1": "Home",
+     "Footertext1": "Tel: +994 12 430 49 93",
+     "Footertext2": "Mail: info@hacklab.az",
+     "Footertext3": " Address: Baku city, Ataturk ave. 30A <br/>Baku, Azerbaijan",
+     "Footertext4": "2021. Bütün hüquqlar qorunur.",
+     "Footertext5": "Up",
+     "Footertext6": "site by: ZOOM Agency",
+     "Footertext7": "2021. All rights are preserved.",
+     "footerplaceholder": "Search",
+
+
+"comment":   "------------------------Bloq Page------------------------------------",     
+"Blogtitle":"Blogs",
+
+
+
+"comment":   "------------------------FAQ Page------------------------------------",
+
+"faqtitle1":"What is our Society?",
+"faqcontent1":"It is a society for goal-oriented researchers and that stands for their acceptance only on the basis of a special invitation. For this reason, the question of 'what' is actually taken here as the question of 'who'. The members of our society are founders, thinkers and field experts who challenge, encourage and support each other in forming and testing their ideas. We think that good ideas rarely come about on their own. We are a safe zone and anti-incubator that supports the development of new offers and notions.",
+
+"faqtitle2":"Members",
+"faqcontent2":"Members of our society are entrepreneurs who exchange ideas with each other, strive for innovation, are always interested in the world of new technologies, eager to start their own company or have a special interest in new fields, full of innovative and creative ideas, wanting to develop endlessly in technology. These include Software Engineers, Technical Experienced Designers, Product Managers or Marketing Specialists, and Technical Entrepreneurs. Athletes, teachers, community leaders, etc. specialists in specific fields who have a technical background or have moved to technical fields in addition to technical and technological fields  can also become members of our Society. <br /> <br /> One of the nuances we take into account when choosing our members is that the area experts and other people we name fit into our collective way of thinking. Because people who have enough knowledge and self-development in these areas have the ability to make a significant contribution to other members, and thus the discussions become deeper and more sensible. ",
+
+"faqtitle3":"How do we meet our expenses?",
+"faqcontent3":"There is a junior Seed investment fund to provide financially our Society. The Fund is established by the Society and supports the Society's operating expenses.",
+
+"faqtitle4":"What are the expectations from the members?",
+"faqcontent4":"In general, we have only one expectation from our members: their 'appearance'. By 'appearing' we mean being fully prepared as a member of the Society. <br /><br /> More specifically, what is 'appearance'? - Attend our events, participate our monthly meetings and share the happy moments of our alumni, build deep relationships with other members, join staff and participate in weekly meetings, contribute to personal development areas and take leadership roles in the Society. <br /><br /> Values that we expect our members to support: <br /><br /> <strong>Educate yourself:</strong> The best work is based on self-care. Don't be afraid to meet your needs. <br /><br /> <strong>Cross Your Borders:</strong> We overcome barriers to our personal development by asking each other though questions. <br /><br /> <strong>Invest in your development:</strong> Invest in your future from your time in the Society by creating your personal and professional qualities and building deep relationships with other members of the Society. <br /><br /><strong>Leave a mark:</strong> Inherit those who will follow in your footsteps. Follow yourself in our Society by initiating projects. Society is yours now - you don't have to ask permission." ,
+
+"faqtitle5":"What detaches our society from coworking spaces?",
+"faqcontent5":"Our society is created of members who come together to loosely explore and research new ideas. Our members engage in a variety of activities - starting a company, working on open source projects, learning new fields, writing books - and doing other research. Entrepreneurs join the Society when they are in the concept and idea level. Unlike accelerators, there is no need to open a company and wait for funding at any time to join the Society. We call our members to find an area that is really important to them and to be ready to dedicate time to this area for the next 5 years or more. Half of our community members are professionals who want to increase their experience, learn new opportunities or novel areas. Many of them contribute to open source projects, write books or are looking for inventions. After graduating from society, they join research institutions, charities, academic institutions or other companies to continue their careers.<br /><br /> We prefer society to everything. Our members carry out various activities to help each other, to inherit future members, to contribute to the Society. Unlike joint workplaces, we do not charge for every table in our physical space, but we have many opportunities, sources and human resources. We do not have the capabilities or resources of eWork. Our means serve the Society and are managed by the Society.",
+
+"faqtitle6":"How does our Society help field professionals or those who want to become professionals?",
+"faqcontent6":"We are constantly adapting to the latest developments of today by continually developing ourselves. In our seminars, not only the speakers are experts in their areas, but also the seminar participants have enough knowledge in this field. This, in turn, results in a deeper and more instructive discussion. Our members read scientific works together, discuss and help each other.<br /> <br />One of the primary benefits of our society is the freedom and depth of support our members provide to each other. <br /> <br /> One of the aspects we take into account when choosing members is that the field specialists and founders fit into our collective structure. Critical members in a particular field create an organic impulse, which allows other members to apply their knowledge and skills in the real world, thereby learning and growing.",
+
+"faqtitle7":"Who can be a member?",
+"faqcontent7":"Applicants in the following categories, professionals or those in transition to professional world can be members: <br /><br /> &#9679; &nbsp; Software engineers; <br /><br /> &#9679; &nbsp; Experienced designers, product managers or marketing specialists; <br /><br /> &#9679; &nbsp; Technical initiators; <br /><br /> &#9679; &nbsp; Field specialists with technical background or transferred to technical fields (athletes, teachers, community managers, etc.);  <br /><br /> &#9679; &nbsp; Other people connected to the world of technology. If you do not fit into any of the above categories, but you think you will make a valuable contribution to our community, please contact us at info@hacklab.az.",
+
+"faqtitle8":"When can you become a member?",
+"faqcontent8":"If you work full time and plan to leave your job in the next 6 months, then you can easily become a member of our Society. If you have a company or do not want to start a new company, if you study, if you have no connection with the technical field, but you are interested and want to develop yourself, then the doors of our Society are always open to you. <br /> <br /> After becoming a member of our Society, if you do not have enough time to fully participate in the Society and think that you have gained enough knowledge and experience from the Society, you have the opportunity to graduate on several conditions. These conditions: The full-time job to raise a certain amount of capital for your company, to grow your team with 4 or more employees. <br /> <br /> When a new company is established, the company has various investment rights. The Society Fund invests a certain amount of money in the next fundraiser of your existing company or the company you started when you became a member. Our goal is to provide our companies with all possible assistance from our collective experience in their travels.",
+
+"faqtitle9":"What internal events do we have?",
+"faqcontent9":"Our internal activities and activities are mainly managed by the Society, and thus each activity reflects the interests of the Society. <br /><br /> They are divided into 5 parts: <br /><br /> &#9679; &nbsp; Lectures <br /><br /> &#9679; &nbsp; Courses <br /><br /> &#9679; &nbsp; Research <br /><br /> &#9679; &nbsp; Workshops <br /><br /> &#9679; &nbsp; Entertaining and social events",
+
+"faqtitle10":"When can you graduate?",
+"faqcontent10":"There are no special rules for graduation. Instead, the basic principle is that if you can no longer commit to full participation in the Society, you must graduate. Positive indicators that may indicate that it is time to graduate: <br /><br /> &#9679; A full-time job; <br /> &#9679; Raising more than $ 1 million for your company; <br /> &#9679; Growing your team with 4 or more employees.",
+
+"faqtitle11":"Why is the fund created?",
+"faqcontent11":"Our Seed fund is created to invest in companies that start running in the Society and in companies that are directed to us outside the Society. Management fees generated by the Fund cover the Society's operating expenses. <br /><br /> As a result, we want to create a sustainable Society that can operate for many years. For this purpose, part of the fund's final profit is always donated to the Society.",
+
+
+"faqtitle12":"Is it invested only in the companies of the members of the Society?",
+"faqcontent12":"There is a symbiotic relationship between the Foundation and the Society: the Foundation exists to support the Society, and our Society also supports the Foundation. However, the Society is taken as a basis. The fund is not for its own benefit, that is, it exists to provide for the society. <br /><br /> The symbiotic relationship manifests itself in several ways: <br /><br /> 1. Members support the fund by introducing the fund team to companies and attracting investment in the initial financing phase; <br /><br /> 2. The Fund supports the Society by providing an operating budget for the Society using its management fee; <br /><br /> 3. A portion of the Fund's final profit is a permanent donation to the Society; <br /><br /> 4. Members of the Society have the opportunity to become investors in the fund without a minimum liability.",
+
+"faqtitle13":" What investment rights does the Society have when starting a new company?",
+"faqcontent13":"By becoming a member of the Society, you have the opportunity to invest up to $ 1 million in the Society's fund for the next initial fundraising of your existing company or the company you started when you became a member. No discount is required if the company offers terms as a leading investor. If another fund sets the conditions, the Society's fund offers to continue or co-manage the leader's terms with a 20% discount. <br /><br />We love to partner with entrepreneurs at the beginning of their journey and invest in initial financing. We are entrepreneurs, so we understand the paths (journeys) of the founders. Our goal is to use our collective experience to help our companies in any case they can on their travels. <br /><br /> Our society accepts applications worldwide! <br /><br /> To be honest, the Society is for people who are actively exploring what to do next, or who will be able to quit their jobs in the next six months.",
+
+
+
+"comment":   "------------------------Fond Page------------------------------------",     
+
+"Fondtext": "The Hacklab Fund is established by the Hacklab Society and is created to meet the operating costs and needs of the Society. Part of the final profit of the Seed Fund is always spent for the Society. The Fund supports The Society and vice versa. The Fund is conditioned by the Limited Liability Company. Members of the Society have the opportunity to become investors in the Fund without a minimum obligation. ",
+"Fondtext1": "Members have the opportunity to support the Fund by presenting the Fund to companies and attracting investment in the initial financing phase. The Fund's share fee varies depending on the projects and the work done by the Fund.",
+    
+"comment":   "------------------------Cemiyyet Page------------------------------------",   
+
+"Cemiyyettext":"As a Hacklab Society, it is a society that supports ideas, opinions that are thought together, analyzed, and decided upon, rather than alone. The interests of the Hacklab Society are related to Industry 4.0. Our interests; Blockchain & Crypto, Big Data, Internet of Things (IoT), Additive Manufacturing, Robotics.",
+      
+"comment":   "------------------------Meeting Page------------------------------------", 
+
+"Meetingtext": "Our society wil  organize various types of Lectures, Courses, Research, Workshops, Entertainment and social events by prioritizing İndustry 4.0 ,thus, they will be managed by the society. The speakers at our seminars and events are experts in their field, and the participants will also be selected from people who are interested in the field and have sufficient knowledge. Our community accepts applications worldwide so you can join us online.",
+
+
+
+
+"comment":   "------------------------Landing Page START------------------------------------",
+
+
+"comment":   "------------------------Section1------------------------------------",
+
+"Section1text":"Hacklab is a door to a new technological world that wants to introduce you the technological areas you will meet in the future without wasting time.",
+"Section1button":"BE MEMBER",
+
+"comment":   "------------------------Section2------------------------------------",
+
+
+
+"title1": "Experts",
+"content1":"The members of the society are experts in the field who have worked and continue to work in many technological areas.",
+"title2": "Industry",
+"content2":"The priority directions of our activities are robotics, data analysis, IoT, blockchain and other Industry 4.0 areas.",
+"title3": "Antiincubator",
+"content3":"There is no need to start a company for join and wait for funding at any time",
+"title4": "Investment",
+"content4":"As a member of the Society, you have a chance to take advantage of the Society's investment opportunities for your projects.",
+
+"comment":   "------------------------Section4------------------------------------",
+"section4title": "Stay tuned for updates",
+"section4placeholder": "Your email address",
+"section4button": "SUBSCRIBE"
         
 }

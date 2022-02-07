@@ -1,5 +1,6 @@
 @import "../formul";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600&display=swap');
 
 
 
@@ -126,7 +127,7 @@ ul{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0px 0 0 5.625vw;
+    margin: 0px 0 0 4.625vw;
     z-index:100;
     padding:0px;
     height: 20px;
@@ -162,7 +163,7 @@ ul{
       }
     }
 
-    @include media ($d:1240px, $m:0 0 0 40px);
+    @include media ($d:1280px, $m:0 0 0 40px);
    
     .tuc-hov{
       width: 0%;
@@ -173,12 +174,12 @@ ul{
     .tuc{
       width: 100%;  
       border-bottom: 2px solid transparent;
-      @include font($fw:500,$fm:'Montserrat',$fs:20px, $ta:center);
+      @include font($fw:500,$fm:'Montserrat',$fs:clamp(16px,1.3888vw,20px), $ta:center);
      @media screen and (max-width: 1027px) {
        width: 100%;
       -webkit-text-stroke: 1px #fff;
       -webkit-text-fill-color: transparent;
-      @include font($fw:700,$fm:'Montserrat',$fs:clamp( 30px, 5.5555vw, 40px), $ta:center);
+      @include font($fw:700,$fm:Be Vietnam Pro,$fs:clamp( 30px, 5.5555vw, 40px), $ta:center);
      }
       @media screen and (max-width: 750px) {
       -webkit-text-stroke: 0.5px #fff;
@@ -221,177 +222,7 @@ ul{
       
   }
  
-.last-li-one{
-    z-index:10000000;
-    text-align:center;
-    width: 200px; 
-    height: 50px;
-    // margin: 28px 0px 0px 0px;
-    margin: 8px 0px 0px 90px;
-      @media screen and (max-width: 1250px) {
-        margin: 28px 0px 0px 60px;
-      }
-     @media screen and (max-width: 1090px) {
-        margin: 28px 0px 0px 40px;
-    }
-      @media screen and (max-width: 990px) {
-        margin: 28px 0px 0px 30px;
-      }
-      @media screen and (max-width: 950px) {
-        margin: 50px 12px 0px 0px;
-      }
-      @media screen and (max-width: 900px) {
-        width: 200px;
-      }
-      @media screen and (max-width: 400px) {
-        margin: 50px 14px 0px 0px;
-      }
-     
 
-    button{
-      width: 230px;
-      height: 50px;
-      box-sizing: border-box;
-      outline:none;
-      border: none;
-      z-index:4;
-      background: transparent;
-      @include size($w:230px, $h:50px);
-      @include font( $fm:'Montserrat', $fs:22px, $fw:500, $c:#fff);
-    }
-    
-    .btn {
-      position: relative;
-      width: 230px;
-      height: 50px;
-      z-index: 6;
-      cursor: pointer;
-      @include font( $fm:'Montserrat',$fw:500, $fs:22px, $c:#fff, $lh: 49px, $ta: center);
-      // font-weight: 400;
-      // line-height: 49px;
-      // text-align: center;
-      display: block;
-      position: relative;
-      text-decoration: none;
-      // margin-left: 200px;
-      // margin: 0px 0px 0px 0px;   
-      padding: auto;
-  
-      // @include media($d:500px, $w:170px, $h:35px, $m:30px auto, $fs: 14px, $p: auto, $lh:57px);
-      @media(min-width: 600px) {     
-        // margin: 0 1em 2em;
-      }  
-      &:hover { text-decoration: none; }
-    }
-    .btn-1 {
-      margin-top:5px;
-      align-items:center;
-      justify-content:center;
-      width: 130px; 
-      height: 50px;
-      padding: 0px 0px 0px 58px;
-      @media screen and (max-width: 950px) {
-        // margin: 0px;
-      }
-      @media screen and (max-width: 900px) {
-        width: 200px;
-        padding: 0px 0px 0px 30px;
-        // margin: 0 0 0 40px;
-      }
-      @media screen and (max-width: 500px) {
-        width: 300px; 
-        height: 50px;
-        padding: 0px 78px 0px 0px;
-      }
-      .span-text-abune{
-        display: flex;
-        align-items:center;
-        justify-content:center;
-        // text-align: center;
-        // font-size: 22px;
-        // text-align: center;
-        //  color: black;
-        //  font-weight: 500;
-        display: block;
-        margin: 0px auto;
-        // @include media($d:500px, $fs: 18px);
-        @include font($fs: 22px, $ta: center, $fw: 500, $c: black, $fm: 'Montserrat');
-        
-        
-         @include media($d:950px, $c:#fff); 
-        //  @include media($d:500px, $m: 0px 0px 0px 0px);
-      }
-      svg {
-        width: 230px!important;
-        // height: 50px;
-        // @include media($d:500px, $w:170px, $h:35px, $m:10px auto);
-        // left: 0;
-        // position: absolute;
-        // top: 0; 
-       
-        height: 50px;
-        left: 0;
-        position: absolute;
-        top: 0; 
-        width: 100%; 
-        // margin: 0 30px 0 0;
-        mix-blend-mode:difference;
-        @media screen and (max-width: 500px) {
-          margin: 0 0 0 -5px;
-          width: 230px; 
-          height: 50px;
-        }
-
-      }
-      rect {
-        // fill: none;
-        // stroke: black;
-        // stroke-width: 3;
-        // stroke-dasharray: 622, 0;
-        transition: all 0.35s linear;
-        // @media(max-width: 950px) {     
-        //   stroke: #fff;
-        // } 
-
-        fill: none;
-        stroke: black;
-        @media screen and (max-width: 950px) {
-          stroke: #fff;
-        }
-        text-align: center;
-        width: 230px; 
-        height: 50px;
-        stroke-width: 3;
-        stroke-dasharray: 622, 0;
-        text-align: center;
-        margin-right: 50px;
-        // @media screen and (max-width: 900px) {
-        //    width: 200px;
-        // }
-        @media screen and (max-width: 500px) {
-          width: 230px;  
-        }
-
-      }
-    }
-    .btn-1:hover {
-      // background: rgba(#fff, 0);
-      // font-weight: 900;
-      // letter-spacing: 1px;   
-
-      span{
-        font-weight: 900;
-      }
-      
-      rect {
-        stroke-width: 6;
-        stroke-dasharray: 15, 420;
-        stroke-dashoffset: 48;
-        transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-      }
-    }
-
-  }
 }
 }
 
@@ -405,7 +236,7 @@ ul{
   outline: none;
   border: none;
   font-size:22px;
-  cursor:context-menu!important;
+  // cursor:context-menu!important;
 }
 
 

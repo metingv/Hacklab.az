@@ -1,7 +1,7 @@
 import "./Navbar.scss";
 import loqo from "../assets/loqob.png";
 import times from "../assets/cancel.png";
-import { NavLink, withRouter } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom"; 
 import $ from "jquery";
 import { connect } from "react-redux";
 import React, { useState, useEffect } from "react";
@@ -103,32 +103,32 @@ function Navbar({ displaymode }) {
         </li>
          <li>
           <NavLink to="/fond">
-            <div className="tuc" >Fond</div>
+            <div className="tuc">{t('Navbarli1')}</div>
             <div className="tuc-hov"></div>
           </NavLink>
         </li>
          <li>
           <NavLink to="/cemiyyet">
-            <div className="tuc">Cəmiyyət</div>
+            <div className="tuc">{t('Navbarli2')}</div>
             <div className="tuc-hov"></div>
           </NavLink>
         </li>
 
         <li>
           <NavLink to="/meeting">
-            <div className="tuc">Tədbirlər</div>
+            <div className="tuc">{t('Navbarli3')}</div>
             <div className="tuc-hov"></div>
           </NavLink>
         </li>
          <li>
           <NavLink to="/faq">
-            <div className="tuc">FAQ</div>
+            <div className="tuc">{t('Navbarli4')}</div>
             <div className="tuc-hov"></div>
           </NavLink>
         </li>
          <li>
           <NavLink to="/blog">
-            <div className="tuc">Bloq</div>
+            <div className="tuc">{t('Navbarli5')}</div>
             <div className="tuc-hov"></div>
           </NavLink>
         </li>        

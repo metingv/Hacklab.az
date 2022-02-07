@@ -6,12 +6,13 @@ import Section5 from "../components/Section5";
 import { NavLink, withRouter,useLocation } from "react-router-dom";
 import { connect } from "react-redux";
 import React, { useState, useEffect } from "react"; 
-import { Trans,Translation } from "react-i18next";
+import { useTranslation,Trans,Translation } from "react-i18next";
 import i18n from '../i18n';
 import $ from "jquery";
 
 function Fond({ text5 = [], displaymode1}) {
 const { pathname } = useLocation();
+ const { t, i18n } = useTranslation();
   
    useEffect(() => {
     window.scrollTo(0, 0);
@@ -45,7 +46,7 @@ const { pathname } = useLocation();
             alt=""
           /> 
         </div>
-          <h1 id = "Fond">Fond</h1>
+          <h1 id = "Fond">{t('Navbarli1')}</h1>
         <div className="sectionone">
           <div className="text">
             <div className="first-div">
@@ -56,9 +57,11 @@ const { pathname } = useLocation();
            </Translation>          
             </div>
             <div className="second-div">
-              Number of shows, including season one of “The Boys,” “The Wilds,”
-              “Invincible” and “Fairfax.” When you’re watching one of these four
-              titles, you can click on the new “Share.{" "}
+               <Translation i18n={i18n} >
+      {
+        (t, {i18n}) => <span>{t('Fondtext1')}</span>
+      }
+           </Translation>     
             </div>
           </div>
           <img src="https://cdn.wallpapersafari.com/95/60/iQbLIK.jpg" />

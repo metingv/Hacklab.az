@@ -4,7 +4,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  cursor:none;
+  cursor:none!important;
 }
  
  input{
@@ -39,7 +39,6 @@ select {
   text-indent: 1px;
   text-overflow: '';
   background:transparent!important;
-
   padding:5px;
   font-weight:900;
   outline:none;

@@ -57,10 +57,12 @@
   overflow: hidden;
   transition: all 0.5s;
   @media screen and (max-width:700px) { 
-    width: 160px!important;
+    width: 200px!important;
     height: 35px;
     padding: 0px 17px;
-
+  }
+   &:hover{
+    background: #333; /* onhover background color */
   }
   
 }

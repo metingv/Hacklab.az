@@ -5,16 +5,19 @@ import { NavLink, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import React, { useState, useEffect } from "react";
 import $ from "jquery";
+import { useTranslation,Trans,Translation } from "react-i18next"; 
+import i18n from '../i18n';
 
 function Section6({ text4 = [], displaymode1 }) {
   useEffect(() => {
     $(".navbar").css("position", displaymode1);
   });
+   const { t, i18n } = useTranslation();
   return ( 
     <>
       <div id="up" className="Section6">
         <div className="meetingcontent">
-          <div className="meetingtitle"> Tədbirlər </div>
+          <div className="meetingtitle"> {t('Navbarli3')} </div>
 
           <div className="meetingdivs">
             {text4.slice(0, 3).map((tex) => {
